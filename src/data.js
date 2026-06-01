@@ -1,0 +1,688 @@
+export const LC = {
+  "Two Sum II":"https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
+  "Remove Duplicates from Sorted Array":"https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
+  "Move Zeroes":"https://leetcode.com/problems/move-zeroes/",
+  "Container With Most Water":"https://leetcode.com/problems/container-with-most-water/",
+  "Max Average Subarray I":"https://leetcode.com/problems/maximum-average-subarray-i/",
+  "Find All Anagrams in a String":"https://leetcode.com/problems/find-all-anagrams-in-a-string/",
+  "Permutation in String":"https://leetcode.com/problems/permutation-in-string/",
+  "Longest Substring Without Repeating Chars":"https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+  "Min Size Subarray Sum":"https://leetcode.com/problems/minimum-size-subarray-sum/",
+  "Longest Repeating Char Replacement":"https://leetcode.com/problems/longest-repeating-character-replacement/",
+  "Min Window Substring":"https://leetcode.com/problems/minimum-window-substring/",
+  "Subarray Sum Equals K":"https://leetcode.com/problems/subarray-sum-equals-k/",
+  "Product of Array Except Self":"https://leetcode.com/problems/product-of-array-except-self/",
+  "Continuous Subarray Sum":"https://leetcode.com/problems/continuous-subarray-sum/",
+  "Group Anagrams":"https://leetcode.com/problems/group-anagrams/",
+  "Top K Frequent Elements":"https://leetcode.com/problems/top-k-frequent-elements/",
+  "Longest Consecutive Sequence":"https://leetcode.com/problems/longest-consecutive-sequence/",
+  "First Missing Positive":"https://leetcode.com/problems/first-missing-positive/",
+  "Next Greater Element I":"https://leetcode.com/problems/next-greater-element-i/",
+  "Next Greater Element II":"https://leetcode.com/problems/next-greater-element-ii/",
+  "Daily Temperatures":"https://leetcode.com/problems/daily-temperatures/",
+  "Largest Rectangle in Histogram":"https://leetcode.com/problems/largest-rectangle-in-histogram/",
+  "Trapping Rain Water":"https://leetcode.com/problems/trapping-rain-water/",
+  "Binary Search":"https://leetcode.com/problems/binary-search/",
+  "Search in Rotated Sorted Array":"https://leetcode.com/problems/search-in-rotated-sorted-array/",
+  "Find Min in Rotated Array":"https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+  "Koko Eating Bananas":"https://leetcode.com/problems/koko-eating-bananas/",
+  "Capacity to Ship":"https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/",
+  "Reverse Linked List":"https://leetcode.com/problems/reverse-linked-list/",
+  "Linked List Cycle II":"https://leetcode.com/problems/linked-list-cycle-ii/",
+  "Merge Two Sorted Lists":"https://leetcode.com/problems/merge-two-sorted-lists/",
+  "Remove Nth From End":"https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+  "Reorder List":"https://leetcode.com/problems/reorder-list/",
+  "Pow(x,n)":"https://leetcode.com/problems/powx-n/",
+  "Majority Element II":"https://leetcode.com/problems/majority-element-ii/",
+  "Subsets":"https://leetcode.com/problems/subsets/",
+  "Subsets II":"https://leetcode.com/problems/subsets-ii/",
+  "Combination Sum":"https://leetcode.com/problems/combination-sum/",
+  "Combination Sum II":"https://leetcode.com/problems/combination-sum-ii/",
+  "Palindrome Partitioning":"https://leetcode.com/problems/palindrome-partitioning/",
+  "Combinations":"https://leetcode.com/problems/combinations/",
+  "Permutations":"https://leetcode.com/problems/permutations/",
+  "Permutations II":"https://leetcode.com/problems/permutations-ii/",
+  "Letter Combinations of Phone Number":"https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
+  "Word Search":"https://leetcode.com/problems/word-search/",
+  "N-Queens":"https://leetcode.com/problems/n-queens/",
+  "Jump Game":"https://leetcode.com/problems/jump-game/",
+  "Jump Game II":"https://leetcode.com/problems/jump-game-ii/",
+  "Gas Station":"https://leetcode.com/problems/gas-station/",
+  "Non-overlapping Intervals":"https://leetcode.com/problems/non-overlapping-intervals/",
+  "Task Scheduler":"https://leetcode.com/problems/task-scheduler/",
+  "Meeting Rooms II":"https://leetcode.com/problems/meeting-rooms-ii/",
+  "Single Number":"https://leetcode.com/problems/single-number/",
+  "Missing Number":"https://leetcode.com/problems/missing-number/",
+  "Counting Bits":"https://leetcode.com/problems/counting-bits/",
+  "Bitwise AND of Numbers Range":"https://leetcode.com/problems/bitwise-and-of-numbers-range/",
+  "Max Depth":"https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+  "Min Depth":"https://leetcode.com/problems/minimum-depth-of-binary-tree/",
+  "Diameter of Binary Tree":"https://leetcode.com/problems/diameter-of-binary-tree/",
+  "Path Sum":"https://leetcode.com/problems/path-sum/",
+  "Path Sum II":"https://leetcode.com/problems/path-sum-ii/",
+  "Path Sum III":"https://leetcode.com/problems/path-sum-iii/",
+  "Binary Tree Max Path Sum":"https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+  "Level Order Traversal":"https://leetcode.com/problems/binary-tree-level-order-traversal/",
+  "Right Side View":"https://leetcode.com/problems/binary-tree-right-side-view/",
+  "Zigzag Level Order":"https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/",
+  "Populating Next Right Pointers":"https://leetcode.com/problems/populating-next-right-pointers-in-each-node/",
+  "Validate BST":"https://leetcode.com/problems/validate-binary-search-tree/",
+  "Kth Smallest in BST":"https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+  "LCA of BST":"https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+  "Convert Sorted Array to BST":"https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/",
+  "Recover BST":"https://leetcode.com/problems/recover-binary-search-tree/",
+  "Kth Largest Element":"https://leetcode.com/problems/kth-largest-element-in-an-array/",
+  "Top K Frequent Words":"https://leetcode.com/problems/top-k-frequent-words/",
+  "Merge K Sorted Lists":"https://leetcode.com/problems/merge-k-sorted-lists/",
+  "Find Median from Data Stream":"https://leetcode.com/problems/find-median-from-data-stream/",
+  "Number of Islands":"https://leetcode.com/problems/number-of-islands/",
+  "Clone Graph":"https://leetcode.com/problems/clone-graph/",
+  "Pacific Atlantic Water Flow":"https://leetcode.com/problems/pacific-atlantic-water-flow/",
+  "Max Area of Island":"https://leetcode.com/problems/max-area-of-island/",
+  "Course Schedule":"https://leetcode.com/problems/course-schedule/",
+  "Course Schedule II":"https://leetcode.com/problems/course-schedule-ii/",
+  "Alien Dictionary":"https://leetcode.com/problems/alien-dictionary/",
+  "Find Eventual Safe States":"https://leetcode.com/problems/find-eventual-safe-states/",
+  "Network Delay Time":"https://leetcode.com/problems/network-delay-time/",
+  "Cheapest Flights Within K Stops":"https://leetcode.com/problems/cheapest-flights-within-k-stops/",
+  "Path with Minimum Effort":"https://leetcode.com/problems/path-with-minimum-effort/",
+  "Word Ladder":"https://leetcode.com/problems/word-ladder/",
+  "Number of Connected Components":"https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/",
+  "Redundant Connection":"https://leetcode.com/problems/redundant-connection/",
+  "Accounts Merge":"https://leetcode.com/problems/accounts-merge/",
+  "Making a Large Island":"https://leetcode.com/problems/making-a-large-island/",
+  "Climbing Stairs":"https://leetcode.com/problems/climbing-stairs/",
+  "House Robber":"https://leetcode.com/problems/house-robber/",
+  "House Robber II":"https://leetcode.com/problems/house-robber-ii/",
+  "Decode Ways":"https://leetcode.com/problems/decode-ways/",
+  "Coin Change":"https://leetcode.com/problems/coin-change/",
+  "Word Break":"https://leetcode.com/problems/word-break/",
+  "LIS":"https://leetcode.com/problems/longest-increasing-subsequence/",
+  "Unique Paths":"https://leetcode.com/problems/unique-paths/",
+  "Unique Paths II":"https://leetcode.com/problems/unique-paths-ii/",
+  "Minimum Path Sum":"https://leetcode.com/problems/minimum-path-sum/",
+  "Maximal Square":"https://leetcode.com/problems/maximal-square/",
+  "Dungeon Game":"https://leetcode.com/problems/dungeon-game/",
+  "Partition Equal Subset Sum":"https://leetcode.com/problems/partition-equal-subset-sum/",
+  "Target Sum":"https://leetcode.com/problems/target-sum/",
+  "Ones and Zeroes":"https://leetcode.com/problems/ones-and-zeroes/",
+  "Coin Change II":"https://leetcode.com/problems/coin-change-ii/",
+  "Longest Common Subsequence":"https://leetcode.com/problems/longest-common-subsequence/",
+  "Edit Distance":"https://leetcode.com/problems/edit-distance/",
+  "Distinct Subsequences":"https://leetcode.com/problems/distinct-subsequences/",
+  "Interleaving String":"https://leetcode.com/problems/interleaving-string/",
+  "Merge Intervals":"https://leetcode.com/problems/merge-intervals/",
+  "Insert Interval":"https://leetcode.com/problems/insert-interval/",
+  "Employee Free Time":"https://leetcode.com/problems/employee-free-time/",
+  "Implement Trie":"https://leetcode.com/problems/implement-trie-prefix-tree/",
+  "Add and Search Words":"https://leetcode.com/problems/design-add-and-search-words-data-structure/",
+  "Word Search II":"https://leetcode.com/problems/word-search-ii/",
+  "Replace Words":"https://leetcode.com/problems/replace-words/",
+};
+
+export const PHASES = [
+  { id:1, label:"Phase I", sub:"JS Foundations + DSA Core", days:"Day 1–15", accent:"#F5B731", glow:"rgba(245,183,49,0.1)" },
+  { id:2, label:"Phase II", sub:"DSA Advanced + React + MERN", days:"Day 16–30", accent:"#2DD4BF", glow:"rgba(45,212,191,0.1)" },
+  { id:3, label:"Phase III", sub:"Backend + Project", days:"Day 31–45", accent:"#818CF8", glow:"rgba(129,140,248,0.1)" },
+  { id:4, label:"Phase IV", sub:"CS Core (DBMS, OS, OOPs) + Prep", days:"Day 46–60", accent:"#E879F9", glow:"rgba(232,121,249,0.1)" },
+];
+
+export const TAG_META = {
+  "DSA+DEV": { color:"#8B8FF5", bg:"rgba(139,143,245,0.08)", label:"DSA + DEV" },
+  CS:        { color:"#FBBF24", bg:"rgba(251,191,36,0.08)", label:"CS CORE"    },
+  TEST:      { color:"#F87171", bg:"rgba(248,113,113,0.08)", label:"MOCK TEST"  },
+  BUILD:     { color:"#818CF8", bg:"rgba(129,140,248,0.08)", label:"BUILD"      },
+  PREP:      { color:"#E879F9", bg:"rgba(232,121,249,0.08)", label:"PREP"       },
+  REST:      { color:"#34D399", bg:"rgba(52,211,153,0.08)", label:"REVIEW"      },
+};
+
+export const DIFF_META = {
+  easy:   { label:"EASY",   cls:"diff-easy"   },
+  medium: { label:"MEDIUM", cls:"diff-medium" },
+  hard:   { label:"HARD",   cls:"diff-hard"   },
+};
+
+export const CAT_COLORS = { learn:"#60A5FA", docs:"#2DD4BF", video:"#E879F9", practice:"#F5B731", tool:"#818CF8", api:"#34D399" };
+
+export const PLAN = [
+  { day:1, phase:1, tag:"DSA+DEV", diff:"medium",
+    morning:{ label:"Two Pointers", what:"Opposite-end and same-direction variants on sorted arrays.", tasks:["Two Sum II","Remove Duplicates from Sorted Array","Move Zeroes","Container With Most Water"] },
+    evening:{ label:"JS — Variables, Functions, Scope", what:"var/let/const, hoisting, function declarations vs expressions, scope chain.", tasks:["FreeCodeCamp JS basics (2 hrs)","Write 10 small functions","Understand hoisting with console.log examples"] },
+    note:"Don't rush JS. One solid concept > skimming five topics.",
+    links:[{label:"FreeCodeCamp JS",url:"https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",cat:"learn"},{label:"MDN — Hoisting",url:"https://developer.mozilla.org/en-US/docs/Glossary/Hoisting",cat:"docs"}],
+    quiz:[
+      { q:"Which keyword allows block-scoped variable declaration that can be reassigned?", opts:["var","let","const","function"], ans:1, exp:"'let' is block-scoped and allows reassignment, unlike 'const'." },
+      { q:"What is the typical time complexity of an optimal two-pointer approach on a sorted array?", opts:["O(1)","O(log n)","O(n)","O(n^2)"], ans:2, exp:"Two pointers typically traverse the array at most once, taking O(n) time." }
+    ]},
+  { day:2, phase:1, tag:"DSA+DEV", diff:"medium",
+    morning:{ label:"Sliding Window — Fixed Size", what:"Fixed-k window. Running aggregate. Enter right, exit left.", tasks:["Max Average Subarray I","Find All Anagrams in a String","Permutation in String"] },
+    evening:{ label:"JS — Arrays + Objects + Loops", what:"map, filter, reduce, forEach, find. Object destructuring. for..of, for..in.", tasks:["Implement map/filter/reduce from scratch","Destructuring exercises (5x)","Object manipulation problems"] },
+    note:"map/filter/reduce are used everywhere in React. Master them now.",
+    links:[{label:"MDN — Array methods",url:"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",cat:"docs"}],
+    quiz:[
+      { q:"Which array method returns a completely new array with transformed elements?", opts:["forEach","map","reduce","find"], ans:1, exp:"map() creates a new array populated with the results of calling a provided function." },
+      { q:"What happens to the window size in a Fixed Sliding Window algorithm?", opts:["It grows infinitely","It shrinks and grows","It remains constant (k)","It depends on the input elements"], ans:2, exp:"In fixed sliding window, the distance between the left and right pointers remains constant." }
+    ]},
+  { day:3, phase:1, tag:"DSA+DEV", diff:"hard",
+    morning:{ label:"Sliding Window — Variable", what:"Expand right until condition breaks, shrink left to restore.", tasks:["Longest Substring Without Repeating Chars","Min Size Subarray Sum","Longest Repeating Char Replacement","Min Window Substring"] },
+    evening:{ label:"JS — ES6+ Deep Dive", what:"Arrow functions, template literals, spread/rest, default params, optional chaining, nullish coalescing.", tasks:["Rewrite Day 1 functions using ES6","Spread/rest exercises","Build: mini config object merger"] },
+    note:"Arrow functions don't have their own 'this'. This trips up React devs constantly.",
+    links:[{label:"ES6 Features",url:"https://javascript.info/js",cat:"learn"}],
+    quiz:[
+      { q:"How does an arrow function handle the 'this' keyword?", opts:["It binds to the global object","It creates its own 'this' context","It inherits 'this' from the enclosing lexical scope","It throws an error if 'this' is used"], ans:2, exp:"Arrow functions do not have their own bindings to 'this'; they inherit it from the parent scope." },
+      { q:"In a variable sliding window, when do we typically increment the LEFT pointer?", opts:["On every iteration","When the window becomes invalid","When the window reaches the end","We never increment the left pointer"], ans:1, exp:"We increment the left pointer to shrink the window and make it valid again." }
+    ]},
+  { day:4, phase:1, tag:"DSA+DEV", diff:"medium",
+    morning:{ label:"Prefix Sum + HashMap", what:"prefix[i] − prefix[j] = target. Complement lookup via HashMap.", tasks:["Subarray Sum Equals K","Product of Array Except Self","Continuous Subarray Sum"] },
+    evening:{ label:"JS — Promises + Async/Await", what:"Event loop, callbacks → Promise chain → async/await. Error handling with try/catch.", tasks:["FreeCodeCamp Promises section","Build: fake API with setTimeout","Fetch GitHub user data (real API)"] },
+    note:"async/await is syntactic sugar on Promises. Know both, write async/await.",
+    links:[{label:"JavaScript.info — Promises",url:"https://javascript.info/promise-basics",cat:"learn"}],
+    quiz:[
+      { q:"If a Promise is successfully resolved, which method handles the result?", opts:[".catch()",".finally()",".then()",".resolve()"], ans:2, exp:".then() is called when the Promise fulfills successfully." },
+      { q:"To find a subarray with sum K, what formula do we look for in our HashMap?", opts:["prefixSum + K","prefixSum - K","K - prefixSum","prefixSum * K"], ans:1, exp:"If prefix[i] - prefix[j] = K, then the subarray from j+1 to i has sum K. We look up prefixSum - K in the map." }
+    ]},
+  { day:5, phase:1, tag:"DSA+DEV", diff:"hard",
+    morning:{ label:"Hashing + Frequency Map", what:"O(n) solutions via HashMap. Grouping, deduplication, lookup.", tasks:["Group Anagrams","Top K Frequent Elements","Longest Consecutive Sequence","First Missing Positive"] },
+    evening:{ label:"JS — DOM Manipulation", what:"querySelector, createElement, addEventListener, event delegation.", tasks:["Build: dynamic todo list (no frameworks)","Add/remove/toggle DOM elements","Event delegation on a list"] },
+    note:"React abstracts the DOM — understanding it makes you a better React dev.",
+    links:[{label:"MDN — DOM",url:"https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model",cat:"docs"}],
+    quiz:[
+      { q:"What is Event Delegation in JavaScript?", opts:["Adding an event listener to every single child element","Attaching a single event listener to a parent element to manage all its children","Preventing an event from bubbling up","Delegating event handling to a Web Worker"], ans:1, exp:"Event delegation utilizes event bubbling to handle events at a higher level in the DOM tree." },
+      { q:"What is the average time complexity of insertion and lookup in a Hash Map?", opts:["O(1)","O(log n)","O(n)","O(n log n)"], ans:0, exp:"Hash Maps provide O(1) average time complexity for both insertion and lookup operations." }
+    ]},
+  { day:6, phase:1, tag:"DSA+DEV", diff:"hard",
+    morning:{ label:"Monotonic Stack", what:"Maintain increasing/decreasing stack. Pop condition = your answer.", tasks:["Next Greater Element I","Next Greater Element II","Daily Temperatures","Largest Rectangle in Histogram","Trapping Rain Water"] },
+    evening:{ label:"JS — Closures + Higher-Order Functions", what:"Closure memory, function factories, memoisation. These power hooks.", tasks:["Build: memoize() from scratch","Closure counter exercise","Compose/pipe implementation"] },
+    note:"Closures are how useState hooks remember values between renders.",
+    links:[{label:"MDN — Closures",url:"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures",cat:"docs"}],
+    quiz:[
+      { q:"What is a closure in JavaScript?", opts:["A function that takes another function as an argument","A block of code that executes immediately","A function bundled together with its lexical environment","An object that contains methods"], ans:2, exp:"A closure gives you access to an outer function's scope from an inner function, even after the outer function has returned." },
+      { q:"When solving 'Next Greater Element', what property must the stack maintain?", opts:["It must be strictly sorted alphabetically","It must maintain a monotonically increasing or decreasing order","It must store elements in random order","It must only store prime numbers"], ans:1, exp:"A monotonic stack enforces either an increasing or decreasing order, popping elements that break the order." }
+    ]},
+  { day:7, phase:1, tag:"REST", diff:"easy",
+    morning:{ label:"Light Revision — Days 1–6", what:"1 problem per pattern, timed 20 min each.", tasks:["Two pointers: 1 problem","Sliding window: 1 problem","HashMap: 1 problem","Stack: 1 problem"] },
+    evening:{ label:"JS Mini Project — Weather App", what:"Consolidate week 1 JS. Vanilla JS, async/await, DOM, ES6.", tasks:["Build: Weather app (OpenWeather API + DOM)","Use async/await, destructuring, array methods","No frameworks — vanilla JS only"] },
+    note:"Weekly review is not optional. Your brain consolidates during rest.",
+    links:[{label:"OpenWeather API",url:"https://openweathermap.org/api",cat:"api"}],
+    quiz:[
+      { q:"Which browser API is typically used to make network requests in modern Vanilla JS?", opts:["XMLHttpRequest","jQuery.ajax","fetch()","axios()"], ans:2, exp:"fetch() is the modern, promise-based API built into browsers for network requests." },
+      { q:"Why is spaced repetition and review important for DSA?", opts:["It isn't, you should just cram","It combats the Ebbinghaus forgetting curve","It makes the code run faster","It is required by LeetCode"], ans:1, exp:"Spaced repetition disrupts the forgetting curve, ensuring long-term memory retention." }
+    ]},
+  { day:8, phase:1, tag:"DSA+DEV", diff:"hard",
+    morning:{ label:"Binary Search — Classic + On Answer", what:"lo/hi template. BS on answer space. Monotone feasibility.", tasks:["Binary Search","Search in Rotated Sorted Array","Find Min in Rotated Array","Koko Eating Bananas","Capacity to Ship"] },
+    evening:{ label:"JS — Modules + Git Workflow", what:"ES modules (import/export), npm basics, Git: branch, commit, push.", tasks:["Setup Node.js project with npm","Create and import a JS module","Push to GitHub with proper commits"] },
+    note:"Every MERN project starts with git init. Build the habit now.",
+    links:[{label:"Git Handbook",url:"https://guides.github.com/introduction/git-handbook/",cat:"docs"}],
+    quiz:[
+      { q:"What is the main requirement for applying Binary Search on an array?", opts:["The array must contain only integers","The array must be sorted (or monotonically patterned)","The array must have an even length","The array must not contain duplicates"], ans:1, exp:"Binary Search eliminates half the search space based on a condition, which relies on the data being sorted or ordered." },
+      { q:"Which Git command uploads your local branch commits to a remote repository?", opts:["git commit","git pull","git push","git fetch"], ans:2, exp:"'git push' sends your committed local changes to a remote server like GitHub." }
+    ]},
+  { day:9, phase:1, tag:"DSA+DEV", diff:"medium",
+    morning:{ label:"Linked List Patterns", what:"Fast-slow pointers, reversal, merge. Sentinel nodes.", tasks:["Reverse Linked List","Linked List Cycle II","Merge Two Sorted Lists","Remove Nth From End","Reorder List"] },
+    evening:{ label:"React — JSX + Components + Props", what:"Thinking in components. JSX rules. Props flow. Composition.", tasks:["Read: React docs — Thinking in React","Build: Profile card component","Build: reusable Button, Badge, Card"] },
+    note:"React is just JS + JSX. The mental model: UI = f(state).",
+    links:[{label:"React Docs — Thinking in React",url:"https://react.dev/learn/thinking-in-react",cat:"docs"}],
+    quiz:[
+      { q:"In a Linked List, how do you find the middle node in one pass?", opts:["Count total nodes, then loop half way","Use a hash map to store nodes","Use two pointers: one moves 1 step, the other moves 2 steps","Reverse the list first"], ans:2, exp:"The fast/slow pointer technique finds the middle in one pass. When the fast pointer reaches the end, the slow pointer is at the middle." },
+      { q:"What is a key rule of JSX in React?", opts:["It must return exactly one root element","It cannot contain standard HTML tags","Class attributes must be named 'class'","You cannot use JavaScript variables inside it"], ans:0, exp:"JSX expressions must have one parent element. Fragments (<></>) are often used to satisfy this rule." }
+    ]},
+  { day:10, phase:1, tag:"DSA+DEV", diff:"hard",
+    morning:{ label:"Recursion + Divide & Conquer", what:"Recurrence thinking. Trust the recursive leap. Base case first.", tasks:["Merge Sort (from scratch)","Quick Select","Pow(x,n)","Majority Element II"] },
+    evening:{ label:"React — useState + useEffect", what:"State updates trigger re-renders. useEffect deps array, cleanup.", tasks:["Build: Counter with useState","Build: Post list with useEffect fetch","Debug: stale closure in useEffect"] },
+    note:"Always clean up effects that start subscriptions or timers.",
+    links:[{label:"React useState",url:"https://react.dev/reference/react/useState",cat:"docs"}],
+    quiz:[
+      { q:"If the dependency array of useEffect is empty ([]), when does the effect run?", opts:["On every render","Only once, after the initial render","Never","When the component unmounts"], ans:1, exp:"An empty dependency array means the effect depends on no variables, so it only runs once on mount." },
+      { q:"What is the time complexity of Merge Sort?", opts:["O(n)","O(n log n)","O(n^2)","O(log n)"], ans:1, exp:"Merge sort consistently divides the array in half (log n steps) and merges them (n operations), resulting in O(n log n)." }
+    ]},
+  { day:11, phase:1, tag:"DSA+DEV", diff:"medium",
+    morning:{ label:"Backtracking I — Subsets + Combos", what:"Choose → Explore → Unchoose. Decision tree. Pruning.", tasks:["Subsets","Subsets II","Combination Sum","Combination Sum II","Palindrome Partitioning","Combinations"] },
+    evening:{ label:"React — Controlled Inputs + Forms", what:"Controlled vs uncontrolled. Form state, validation, submission.", tasks:["Build: Login form (email + password + validation)","Build: Multi-field registration form","Handle form errors gracefully"] },
+    note:"Controlled inputs = React owns the value. Don't mix with uncontrolled.",
+    links:[{label:"React Forms",url:"https://react.dev/learn/reacting-to-input-with-state",cat:"docs"}],
+    quiz:[
+      { q:"What defines a 'Controlled Component' in React forms?", opts:["The browser's DOM handles the form data directly","React state is the 'single source of truth' for the input value","The input has no value attribute","The form cannot be submitted"], ans:1, exp:"In controlled components, form data is handled by a React component's state, keeping UI and data in sync." },
+      { q:"In a backtracking template, what immediately follows the recursive exploration step?", opts:["The base case check","Returning the final answer","The 'Unchoose' (backtrack) step to restore state","A while loop"], ans:2, exp:"Backtracking relies on making a choice, exploring it, and then undoing that choice (unchoosing) to explore other paths." }
+    ]},
+  { day:12, phase:1, tag:"DSA+DEV", diff:"hard",
+    morning:{ label:"Backtracking II — Permutations + Grids", what:"Permutation generation. Grid DFS. Constraint propagation.", tasks:["Permutations","Permutations II","Letter Combinations of Phone Number","Word Search","N-Queens"] },
+    evening:{ label:"React — useContext + useReducer", what:"Prop drilling → Context. useReducer for complex state.", tasks:["Build: dark/light theme with useContext","Build: shopping cart with useReducer","Compare: useState vs useReducer"] },
+    note:"Context is not a performance solution. It's a prop-drilling solution.",
+    links:[{label:"React useContext",url:"https://react.dev/reference/react/useContext",cat:"docs"}],
+    quiz:[
+      { q:"What problem does React's Context API primarily solve?", opts:["Slow performance","State immutability","Prop drilling through deeply nested components","API request caching"], ans:2, exp:"Context allows passing data through the component tree without passing props down manually at every level." },
+      { q:"How many permutations exist for an array of N distinct elements?", opts:["N^2","N^N","N! (N factorial)","2^N"], ans:2, exp:"There are N! ways to arrange N distinct items (N choices for first, N-1 for second, etc)." }
+    ]},
+  { day:13, phase:1, tag:"DSA+DEV", diff:"hard",
+    morning:{ label:"Greedy Algorithms", what:"Local optimal = global optimal. Prove it before coding.", tasks:["Jump Game","Jump Game II","Gas Station","Non-overlapping Intervals","Task Scheduler","Meeting Rooms II"] },
+    evening:{ label:"React — React Router v6", what:"Client-side routing. Dynamic params. Nested + protected routes.", tasks:["Build: 3-page app (Home, About, Dashboard)","Dynamic route: /users/:id","Protected route: redirect if not logged in"] },
+    note:"React Router 6 changed a lot from v5. Don't mix up docs versions.",
+    links:[{label:"React Router Tutorial",url:"https://reactrouter.com/en/main/start/tutorial",cat:"docs"}],
+    quiz:[
+      { q:"What makes an algorithm 'Greedy'?", opts:["It explores all possible solutions before deciding","It makes the optimal choice at each local step hoping for a global optimum","It requires exponential time to run","It stores past results to avoid recalculating"], ans:1, exp:"Greedy algorithms build up a solution piece by piece, always choosing the next piece that offers the most immediate benefit." },
+      { q:"In React Router v6, which component is used to define the rendering element for a path?", opts:["<Switch>","<Route element={...} />","<Redirect>","<Router component={...} />"], ans:1, exp:"v6 uses the 'element' prop inside the <Route> component, and <Routes> replaces <Switch>." }
+    ]},
+  { day:14, phase:1, tag:"DSA+DEV", diff:"medium",
+    morning:{ label:"Bit Manipulation", what:"XOR tricks, masking, power-of-2 checks.", tasks:["Single Number","Missing Number","Counting Bits","Bitwise AND of Numbers Range"] },
+    evening:{ label:"React — Custom Hooks + useMemo/useCallback", what:"Extract reusable stateful logic. Memoisation to avoid re-renders.", tasks:["Build: useFetch custom hook","Build: useDebounce custom hook","Add useMemo to expensive list filter"] },
+    note:"Custom hooks = reusable stateful logic. If you copy-paste useEffect, extract a hook.",
+    links:[{label:"React Custom Hooks",url:"https://react.dev/learn/reusing-logic-with-custom-hooks",cat:"docs"}],
+    quiz:[
+      { q:"What is the result of A XOR A in bitwise logic?", opts:["1","A","0","Depends on A"], ans:2, exp:"XORing a number with itself always results in 0 because all identical bits cancel out." },
+      { q:"When should you wrap a function in useCallback?", opts:["Always, to improve performance","Only when passing the function as a prop to an optimized child component that relies on reference equality","Whenever you use useState","When the function contains an API call"], ans:1, exp:"useCallback avoids recreating the function reference, which is useful when passing it to children wrapped in React.memo." }
+    ]},
+  { day:15, phase:1, tag:"TEST", diff:"hard",
+    morning:{ label:"Phase I Mock Test (90 min)", what:"Timed contest sim. 1 problem per major pattern. No hints.", tasks:["Two pointers/sliding window — 1 medium","Binary search — 1 medium","Stack/backtracking — 1 medium","Review: list every pattern where you hesitated"] },
+    evening:{ label:"React Mini-Project — Polish + Deploy", what:"Polish your best React component. Deploy to Vercel.", tasks:["Pick best thing built this phase","Refactor: extract hooks, fix prop drilling","Deploy to Vercel (free, 2 min)"] },
+    note:"Deployed = real. localhost = invisible to recruiters.",
+    links:[{label:"Vercel Deploy",url:"https://vercel.com",cat:"tool"}],
+    quiz:[
+      { q:"Why is it important to deploy side projects?", opts:["To make them run faster","So recruiters and users can actually see and interact with your work","To hide your source code","To pass React compilation checks"], ans:1, exp:"A deployed link is frictionless for a recruiter. 'Works on my machine' doesn't count." },
+      { q:"During a coding interview, if you get stuck on a medium problem, what is the best immediate action?", opts:["Give up","Stay completely silent and think","Communicate your thought process and ask clarifying questions","Write random code until it passes"], ans:2, exp:"Interviewers want to see how you collaborate and think. Silence is a red flag." }
+    ]},
+  { day:16, phase:2, tag:"DSA+DEV", diff:"hard",
+    morning:{ label:"Trees — DFS Patterns", what:"Return-value design. Top-down vs bottom-up. Path problems.", tasks:["Max Depth","Min Depth","Diameter of Binary Tree","Path Sum","Path Sum II","Path Sum III","Binary Tree Max Path Sum"] },
+    evening:{ label:"React — Axios + Data Fetching", what:"Axios over fetch. Loading/error/success states. Custom useFetch.", tasks:["Replace fetch with Axios","Add loading spinner + error boundary","Build: debounced search input"] },
+    note:"Always handle 3 states: loading, error, success. Always.",
+    links:[{label:"Axios Docs",url:"https://axios-http.com/docs/intro",cat:"docs"}],
+    quiz:[
+      { q:"In a Binary Tree Depth-First Search (DFS), what order does a Postorder traversal follow?", opts:["Root, Left, Right","Left, Root, Right","Left, Right, Root","Right, Left, Root"], ans:2, exp:"Postorder visits the Left subtree, then the Right subtree, and finally processes the Root node." },
+      { q:"What is a major advantage of using Axios over the native Fetch API?", opts:["Axios is built into the browser","Axios automatically transforms JSON data and handles HTTP error statuses better","Axios doesn't use Promises","Axios is faster for rendering CSS"], ans:1, exp:"Axios parses JSON automatically and treats non-2xx status codes as errors, simplifying catch blocks." }
+    ]},
+  { day:17, phase:2, tag:"DSA+DEV", diff:"medium",
+    morning:{ label:"Trees — BFS + Level Order", what:"Queue-based traversal. Level averages, zigzag, right side view.", tasks:["Level Order Traversal","Right Side View","Zigzag Level Order","Populating Next Right Pointers"] },
+    evening:{ label:"State Management — Zustand", what:"Global store, selectors, actions, persist middleware.", tasks:["Install Zustand, build: cart store","Add persist middleware","Migrate a context app to Zustand"] },
+    note:"Zustand is what you'd actually use in a startup. Redux in enterprise.",
+    links:[{label:"Zustand Docs",url:"https://zustand-demo.pmnd.rs/",cat:"docs"}],
+    quiz:[
+      { q:"Which data structure is fundamentally used to implement Breadth-First Search (BFS) iteratively?", opts:["Stack","Queue","HashMap","Max Heap"], ans:1, exp:"BFS explores nodes level-by-level, making the First-In-First-Out (FIFO) nature of a Queue perfect." },
+      { q:"Compared to Context API, what rendering optimization does Zustand offer by default?", opts:["It prevents unnecessary re-renders of components that don't depend on the changed state slice","It renders everything on the server","It converts components to classes","It disables the virtual DOM"], ans:0, exp:"Zustand allows components to select only the state slices they need, preventing re-renders if other parts of the store change." }
+    ]},
+  { day:18, phase:2, tag:"DSA+DEV", diff:"hard",
+    morning:{ label:"BST Patterns", what:"Inorder = sorted. Validate, LCA, insert, delete.", tasks:["Validate BST","Kth Smallest in BST","LCA of BST","Convert Sorted Array to BST","Recover BST"] },
+    evening:{ label:"Node.js — Runtime + Module System", what:"Event loop, CommonJS vs ESM, fs/path/os modules, npm scripts.", tasks:["Build: file reader using fs module","Build: HTTP server (no Express)","Understand: single-threaded + non-blocking"] },
+    note:"Understanding the Node event loop makes async bugs obvious.",
+    links:[{label:"Node.js Docs",url:"https://nodejs.org/en/docs",cat:"docs"}],
+    quiz:[
+      { q:"What is the key property of an Inorder Traversal on a valid Binary Search Tree?", opts:["It visits leaf nodes first","It processes nodes in strictly descending order","It processes nodes in strictly ascending (sorted) order","It visits the root node first"], ans:2, exp:"Because left child < root < right child, an Inorder traversal (Left, Root, Right) will visit nodes in sorted order." },
+      { q:"Node.js is described as single-threaded. How does it handle thousands of concurrent requests?", opts:["It spawns a new thread for every request","It uses an event loop and non-blocking I/O operations","It forces requests into a synchronous queue","It uses multiple CPU cores by default"], ans:1, exp:"Node delegates heavy I/O operations to the OS and uses an event loop to resume execution when the data is ready, avoiding thread blocking." }
+    ]},
+  { day:19, phase:2, tag:"DSA+DEV", diff:"hard",
+    morning:{ label:"Heaps + Top-K Pattern", what:"Min-heap, max-heap. Two-heap trick for median.", tasks:["Kth Largest Element","Top K Frequent Words","Merge K Sorted Lists","Find Median from Data Stream"] },
+    evening:{ label:"Express — Setup + Routing + Middleware", what:"Express app, Router, middleware chain, error handling.", tasks:["Build: Express server with 5 REST endpoints","Custom middleware: request logger","Error handling middleware"] },
+    note:"res.json(), req.params, req.body, req.query — know these cold.",
+    links:[{label:"Express Routing",url:"https://expressjs.com/en/guide/routing.html",cat:"docs"}],
+    quiz:[
+      { q:"To find the K-th LARGEST element efficiently using a heap, which type of heap should you maintain of size K?", opts:["Max-Heap","Min-Heap","Fibonacci Heap","Binary Search Tree"], ans:1, exp:"A Min-Heap of size K keeps the smallest of the K largest elements at the root. If a new element is bigger than the root, you pop the root and push the new element." },
+      { q:"In Express.js, what is middleware?", opts:["A database connection string","A function that has access to the request, response, and next function in the request-response cycle","A frontend routing library","A templating engine"], ans:1, exp:"Middleware functions execute code, make changes to the request/response objects, or end the cycle, and call next() to pass control." }
+    ]},
+  { day:20, phase:2, tag:"DSA+DEV", diff:"medium",
+    morning:{ label:"Graph — BFS + DFS", what:"Adjacency list. BFS = shortest path. DFS = connectivity.", tasks:["Number of Islands","Clone Graph","Pacific Atlantic Water Flow","Max Area of Island"] },
+    evening:{ label:"Express — MVC + REST API Design", what:"Controllers, services, routes. HTTP verbs. Status codes. Validation.", tasks:["Refactor into routes/, controllers/, middleware/","Build: Notes REST API (full CRUD)","Add express-validator"] },
+    note:"Project structure is architecture. MVC keeps it sane as it grows.",
+    links:[{label:"REST API Best Practices",url:"https://restfulapi.net/",cat:"learn"}],
+    quiz:[
+      { q:"When representing a sparse graph, which data structure is generally most space-efficient?", opts:["Adjacency Matrix","Adjacency List","Edge List","Binary Tree"], ans:1, exp:"An Adjacency List only stores existing edges, saving space compared to a Matrix which stores all possible V x V connections (mostly zeros in sparse graphs)." },
+      { q:"Which HTTP status code signifies that a resource was successfully CREATED (e.g., after a POST)?", opts:["200 OK","201 Created","204 No Content","400 Bad Request"], ans:1, exp:"201 Created is the standard response for a successful resource creation." }
+    ]},
+  { day:21, phase:2, tag:"DSA+DEV", diff:"hard",
+    morning:{ label:"Graph — Topological Sort", what:"Kahn's BFS topo. DFS topo. Cycle detection.", tasks:["Course Schedule","Course Schedule II","Alien Dictionary","Find Eventual Safe States"] },
+    evening:{ label:"MongoDB — Setup + Mongoose Schemas", what:"Atlas free tier. Schemas, models, validation, indexes.", tasks:["Create MongoDB Atlas cluster","Define User schema with validators","CRUD: create, findById, update, delete"] },
+    note:"Think in documents, not rows. A schema is a contract.",
+    links:[{label:"Mongoose Docs",url:"https://mongoosejs.com/docs/guide.html",cat:"docs"}],
+    quiz:[
+      { q:"Topological sorting is only possible on what kind of graph?", opts:["Undirected Graph","Directed Acyclic Graph (DAG)","Cyclic Graph","Bipartite Graph"], ans:1, exp:"If a graph has cycles, there is no valid linear ordering where every directed edge points from earlier to later." },
+      { q:"In MongoDB, what format is primarily used to store documents?", opts:["XML","BSON (Binary JSON)","CSV","YAML"], ans:1, exp:"MongoDB stores data in BSON, a binary representation of JSON that supports more data types (like Dates and ObjectIds)." }
+    ]},
+  { day:22, phase:2, tag:"DSA+DEV", diff:"hard",
+    morning:{ label:"Graph — Dijkstra / Shortest Path", what:"Dijkstra = BFS with priority queue. Bellman-Ford for negatives.", tasks:["Network Delay Time","Cheapest Flights Within K Stops","Path with Minimum Effort","Word Ladder"] },
+    evening:{ label:"MongoDB — Relationships + Queries", what:"Embedding vs referencing. populate(). Aggregation basics.", tasks:["Post schema referencing User","Use populate() to get author details","Aggregate: count posts per user"] },
+    note:"Embedding = fast reads. Referencing = flexible. Pick based on read patterns.",
+    links:[{label:"Mongoose Populate",url:"https://mongoosejs.com/docs/populate.html",cat:"docs"}],
+    quiz:[
+      { q:"Why does Dijkstra's Algorithm fail on graphs with negative weight edges?", opts:["It uses a queue instead of a stack","It assumes once a node's shortest path is found, it cannot be improved by a longer path","It requires an Adjacency Matrix","It is O(V^2)"], ans:1, exp:"Dijkstra acts greedily. It locks in the shortest path to a node, but a negative edge later on could provide a cheaper path that Dijkstra ignores." },
+      { q:"In Mongoose, what does the .populate() method do?", opts:["It seeds the database with fake data","It replaces a referenced ID with the actual document data from another collection","It calculates the sum of a field","It drops the collection"], ans:1, exp:"Populate lets you reference documents in other collections and automatically replace the specified paths with document(s) from other collections." }
+    ]},
+  { day:23, phase:2, tag:"DSA+DEV", diff:"hard",
+    morning:{ label:"Union-Find (DSU)", what:"Path compression + union by rank. Connected components.", tasks:["Number of Connected Components","Redundant Connection","Accounts Merge","Making a Large Island"] },
+    evening:{ label:"Auth — bcrypt + JWT", what:"Never store plain passwords. bcrypt hashing. JWT sign/verify/decode.", tasks:["Hash passwords with bcrypt (saltRounds=10)","Generate JWT on login","Verify JWT middleware","Refresh token concept"] },
+    note:"saltRounds=10 is the sweet spot. Lower = insecure. Higher = too slow.",
+    links:[{label:"JWT.io",url:"https://jwt.io/",cat:"tool"}],
+    quiz:[
+      { q:"What two optimizations make the Disjoint Set Union (DSU) operations practically O(1)?", opts:["Path Compression and Union by Rank","Memoization and Tabulation","Divide and Conquer","Hashing and Chaining"], ans:0, exp:"Path compression flattens the tree during 'Find', and union by rank keeps the tree shallow by attaching the smaller tree to the larger one." },
+      { q:"What are the three parts of a JSON Web Token (JWT)?", opts:["Header, Payload, Signature","User, Password, Hash","Token, Secret, Salt","Data, Key, Expiry"], ans:0, exp:"A JWT consists of a Header (algo), Payload (data/claims), and a Signature (to verify authenticity)." }
+    ]},
+  { day:24, phase:2, tag:"DSA+DEV", diff:"hard",
+    morning:{ label:"DP I — 1D + Memoisation", what:"Define dp[i] in plain English first. Top-down then tabulate.", tasks:["Climbing Stairs","House Robber","House Robber II","Decode Ways","Coin Change","Word Break","LIS"] },
+    evening:{ label:"Auth — Full Flow", what:"Register → hash → save. Login → compare → JWT. Middleware protect.", tasks:["POST /register (hash + save)","POST /login (compare + JWT)","Auth middleware: verify JWT","Test all with Postman/Thunder"] },
+    note:"Store JWT in httpOnly cookie in production. Never localStorage for sensitive apps.",
+    links:[{label:"DP Patterns Guide",url:"https://leetcode.com/discuss/study-guide/458695/",cat:"learn"}],
+    quiz:[
+      { q:"What is the core difference between Memoization (Top-Down) and Tabulation (Bottom-Up) in DP?", opts:["Memoization uses less memory","Tabulation uses recursion, memoization uses loops","Memoization caches recursive results, tabulation builds answers iteratively from the base cases up","Tabulation is always O(1) space"], ans:2, exp:"Memoization starts from the goal and recurses down, caching answers. Tabulation starts from the base cases and uses loops to reach the goal." },
+      { q:"Why is storing a JWT in localStorage considered a security risk?", opts:["It expires too quickly","It is vulnerable to Cross-Site Scripting (XSS) attacks","It is vulnerable to CSRF attacks","It cannot be accessed by React"], ans:1, exp:"Any JS code (including malicious scripts injected via XSS) can read localStorage. HttpOnly cookies prevent JS access." }
+    ]},
+  { day:25, phase:2, tag:"DSA+DEV", diff:"hard",
+    morning:{ label:"DP II — 2D Grid DP", what:"2D state space. Fill direction = dependency direction.", tasks:["Unique Paths","Unique Paths II","Minimum Path Sum","Maximal Square","Dungeon Game"] },
+    evening:{ label:"Full-Stack — Connect React to Express", what:"Proxy setup. Axios base URL. JWT in headers. CORS.", tasks:["Add proxy in Vite dev server","Axios: set Authorization header","CORS: allow only frontend origin","Test: login from React → hit protected route"] },
+    note:"CORS errors are not Express bugs. They're browser security.",
+    links:[{label:"CORS MDN",url:"https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS",cat:"docs"}],
+    quiz:[
+      { q:"In a classic 2D Grid DP problem where you can only move Right and Down, what does dp[i][j] usually depend on?", opts:["dp[i-1][j-1]","dp[i][j+1] and dp[i+1][j]","dp[i-1][j] and dp[i][j-1]","All 8 surrounding cells"], ans:2, exp:"Because you can only arrive at (i,j) from the cell above (i-1, j) or the cell to the left (i, j-1)." },
+      { q:"What triggers a CORS (Cross-Origin Resource Sharing) error?", opts:["A syntax error in your Express route","A browser restricting an HTTP request initiated from a different domain/port than the server","A database connection timeout","An invalid JWT token"], ans:1, exp:"CORS is a browser security mechanism that blocks cross-origin requests unless the server explicitly sends headers allowing it." }
+    ]},
+  { day:26, phase:2, tag:"DSA+DEV", diff:"hard",
+    morning:{ label:"DP III — Knapsack Variants", what:"0/1 = backward inner loop. Unbounded = forward.", tasks:["Partition Equal Subset Sum","Target Sum","Ones and Zeroes","Coin Change II"] },
+    evening:{ label:"React — AuthContext + Protected Routes", what:"AuthContext for user state. PrivateRoute wrapper.", tasks:["Build: AuthContext (login, logout, user)","Build: PrivateRoute component","On load: verify token with /me endpoint","Redirect unauthenticated → /login"] },
+    note:"Don't store JWT in localStorage. Memory + httpOnly cookie for refresh token.",
+    links:[{label:"React Router FAQ",url:"https://reactrouter.com/en/main/start/faq",cat:"docs"}],
+    quiz:[
+      { q:"In the classic 0/1 Knapsack DP using a 1D array, why must the inner capacity loop iterate BACKWARDS?", opts:["To save memory","To avoid using the same item multiple times","Because arrays are zero-indexed","To ensure the largest items are picked first"], ans:1, exp:"Iterating backwards ensures that when computing dp[j], the value of dp[j - weight] belongs to the previous row (meaning the item hasn't been included yet in the current capacity)." },
+      { q:"What is the main purpose of a Protected Route wrapper in React?", opts:["To encrypt network traffic","To check if a user is authenticated before rendering the child component, redirecting if not","To hide source code from the client","To prevent SQL injection"], ans:1, exp:"Protected routes conditionally render children if the user context is valid, otherwise they use <Navigate> to bounce the user to a login page." }
+    ]},
+  { day:27, phase:2, tag:"DSA+DEV", diff:"hard",
+    morning:{ label:"DP IV — String DP", what:"LCS family. Edit distance. State = (i,j) on two strings.", tasks:["Longest Common Subsequence","Edit Distance","Distinct Subsequences","Interleaving String"] },
+    evening:{ label:"React — UI Polish with Tailwind CSS", what:"Utility-first CSS. Responsive prefixes. Dark mode.", tasks:["Add Tailwind to React project","Restyle 3 components with Tailwind","Responsive: mobile-first layout for one page"] },
+    note:"Tailwind classes look ugly in code. The output is clean.",
+    links:[{label:"Tailwind Docs",url:"https://tailwindcss.com/docs/installation",cat:"docs"}],
+    quiz:[
+      { q:"In Longest Common Subsequence (LCS) between strings A and B, if A[i] == B[j], what is the DP transition?", opts:["dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1])","dp[i][j] = dp[i-1][j-1] + 1","dp[i][j] = 0","dp[i][j] = dp[i-1][j-1]"], ans:1, exp:"If characters match, the LCS length increases by 1 relative to the subsequences up to i-1 and j-1." },
+      { q:"In Tailwind CSS, what does the class 'md:flex' do?", opts:["Makes the element flex globally","Makes the element flex only on medium screens and up","Makes the element display: block","Applies a flex direction of column"], ans:1, exp:"Prefixes like 'md:' are media query modifiers, applying the utility only at that breakpoint and above (mobile-first)." }
+    ]},
+  { day:28, phase:2, tag:"DSA+DEV", diff:"medium",
+    morning:{ label:"Intervals + Sweep Line", what:"Sort by start. Merge, insert, find free slots.", tasks:["Merge Intervals","Insert Interval","Non-overlapping Intervals","Employee Free Time"] },
+    evening:{ label:"Express — File Upload + Env Vars", what:"Multer for uploads. dotenv for secrets.", tasks:["Setup .env (MONGO_URI, JWT_SECRET, PORT)","Add multer for profile image upload","Validate file type and size server-side"] },
+    note:".env files never go to GitHub. Add to .gitignore before first commit.",
+    links:[{label:"Multer npm",url:"https://www.npmjs.com/package/multer",cat:"docs"}],
+    quiz:[
+      { q:"When solving 'Merge Intervals', what is almost always the required first step?", opts:["Use a Hash Map","Reverse the array","Sort the intervals by their start times","Convert them to a string"], ans:2, exp:"Sorting by start time guarantees that any overlapping intervals will be adjacent to each other in the array." },
+      { q:"Why do we use .env files instead of hardcoding secrets in our Node.js code?", opts:["It makes the code run faster","So secrets aren't pushed to version control (like GitHub) and exposed","Because Express requires it","To compress the application size"], ans:1, exp:"Environment variables keep API keys and passwords out of source code, allowing secure sharing and different configurations per environment (dev, prod)." }
+    ]},
+  { day:29, phase:2, tag:"DSA+DEV", diff:"hard",
+    morning:{ label:"Tries + Advanced Strings", what:"Prefix matching, autocomplete, word search.", tasks:["Implement Trie","Add and Search Words","Word Search II","Replace Words"] },
+    evening:{ label:"Full-Stack — API Testing + Docs", what:"Test every endpoint in Postman. Document your API.", tasks:["Test all auth + resource endpoints","Handle: missing fields, wrong types, duplicates","Write API docs in README (table format)"] },
+    note:"If you can't demo it cleanly in Postman, it's not done.",
+    links:[{label:"Trie Data Structure",url:"https://www.geeksforgeeks.org/trie-insert-and-search/",cat:"learn"}],
+    quiz:[
+      { q:"What is the primary advantage of a Trie (Prefix Tree) over a Hash Set for storing words?", opts:["It takes less memory overall","It can efficiently perform prefix-based searches (autocomplete)","It is built into JavaScript natively","It allows for O(1) lookup regardless of word length"], ans:1, exp:"Tries excel at prefix operations, such as finding all words that start with 'app'." },
+      { q:"What is the standard purpose of writing API Documentation (like Swagger or a README table)?", opts:["To pass compiler checks","To instruct the frontend developer (or users) on how to consume the endpoints, required payloads, and expected responses","To secure the database","To replace unit tests"], ans:1, exp:"APIs are contracts. Docs explain how to use that contract." }
+    ]},
+  { day:30, phase:2, tag:"TEST", diff:"hard",
+    morning:{ label:"Phase II Mock Contest (2 hrs)", what:"Full contest simulation. Trees, graphs, DP.", tasks:["Tree problem — 1 medium/hard","Graph problem — 1 medium","DP problem — 1 medium","Blind 75 checklist: mark every unsolved"] },
+    evening:{ label:"Full-Stack Phase II Review", what:"End-to-end test. Fix broken flows.", tasks:["Test: register → login → access data → logout","Fix any broken auth or CORS issues","List: what the project still needs"] },
+    note:"Day 30 checkpoint. If basics aren't solid, fix them now.",
+    links:[{label:"LeetCode Contest",url:"https://leetcode.com/contest/",cat:"practice"}],
+    quiz:[
+      { q:"What is the maximum time you should be stuck on a problem in a real interview before explicitly communicating your block to the interviewer?", opts:["1 minute","5 minutes","20 minutes","Never tell them"], ans:1, exp:"If you are stuck for a few minutes, voice your thoughts and ask clarifying questions to prompt a hint." },
+      { q:"In a typical MERN app, if the frontend sends a valid JWT but gets a 401 Unauthorized, what is the most likely issue?", opts:["React Router is broken","The token has expired or the JWT secret on the backend doesn't match","MongoDB is down","CORS is blocking it"], ans:1, exp:"401 means authentication failed. If the token is there, it's likely invalid, expired, or signed with a different secret." }
+    ]},
+  { day:31, phase:3, tag:"BUILD", diff:"medium",
+    morning:{ label:"Light DSA — 30 min", what:"1–2 problems to stay sharp.", tasks:["1 medium DP or graph (timed 25 min)","Review: weakest pattern from Phase II"] },
+    evening:{ label:"Project — Plan + Initialize", what:"Define MERN project. Plan models, routes, pages.", tasks:["Choose project: Blog / Task Manager / Job Tracker","Draw data models on paper","Init: backend + frontend repos","Git: create repo, first commit"] },
+    note:"20 min planning = 3 hrs saved.",
+    links:[{label:"Vite Docs",url:"https://vitejs.dev/guide/",cat:"docs"}],
+    quiz:[
+      { q:"Why is drawing database models before coding considered best practice?", opts:["Because Mongoose requires physical drawings","It prevents major architectural rewrites later when relational dependencies are discovered","To make the README look nice","It compiles faster"], ans:1, exp:"Schema changes late in development require painful data migrations and refactoring." },
+      { q:"Which tool provides the fastest local development server for a React project?", opts:["Create React App","Webpack alone","Vite","Gulp"], ans:2, exp:"Vite uses native ES modules to provide extremely fast HMR (Hot Module Replacement) compared to older bundlers." }
+    ]},
+  { day:32, phase:3, tag:"BUILD", diff:"medium",
+    morning:{ label:"Light DSA — 30 min", what:"1 problem in your weakest area.", tasks:["Target weakest pattern","25 min timed, no hints"] },
+    evening:{ label:"Project — Backend: Models + Auth", what:"User model, auth middleware, register/login.", tasks:["User schema (name, email, password)","POST /api/auth/register","POST /api/auth/login","GET /api/auth/me — protected"] },
+    note:"Auth is your project's foundation.",
+    links:[{label:"Mongoose Schema Types",url:"https://mongoosejs.com/docs/schematypes.html",cat:"docs"}],
+    quiz:[
+      { q:"Which Mongoose property ensures a field like 'email' is never duplicated in the database?", opts:["unique: true","required: true","duplicate: false","index: false"], ans:0, exp:"Adding unique: true tells MongoDB to build a unique index on that field, throwing an error on duplicate inserts." },
+      { q:"What should NEVER be included in the payload of a JWT?", opts:["User ID","User Role","Sensitive data like a plain text password","Expiration time"], ans:2, exp:"JWT payloads are encoded, not encrypted. Anyone can decode a JWT and read the payload." }
+    ]},
+  { day:33, phase:3, tag:"BUILD", diff:"medium",
+    morning:{ label:"Light DSA — 30 min", what:"1 Blind 75 unsolved.", tasks:["1 medium from Blind 75 unsolved list"] },
+    evening:{ label:"Project — Backend: Core CRUD", what:"Main resource. Full CRUD with auth.", tasks:["Resource schema with user reference","GET /api/resource (paginated)","POST /api/resource (auth required)","PUT + DELETE (owner only)"] },
+    note:"Pagination from day 1. Retrofitting is painful.",
+    links:[{label:"Express Router",url:"https://expressjs.com/en/guide/routing.html",cat:"docs"}],
+    quiz:[
+      { q:"Which HTTP method is mathematically 'Idempotent' and used for completely replacing a resource?", opts:["POST","PUT","PATCH","DELETE"], ans:1, exp:"PUT is idempotent (making the same request multiple times yields the same result) and is meant to replace an entire entity." },
+      { q:"How do you implement basic offset pagination in MongoDB/Mongoose?", opts:["Using .slice() and .splice()","Using .skip() and .limit()","Using .paginate() and .next()","Using .first() and .last()"], ans:1, exp:".skip((page - 1) * limit).limit(limit) is the standard query chain for basic pagination." }
+    ]},
+  { day:34, phase:3, tag:"BUILD", diff:"medium",
+    morning:{ label:"Light DSA — 30 min", what:"Revisit a wrong answer.", tasks:["1 problem from 'got wrong' list"] },
+    evening:{ label:"Project — Frontend: Auth Pages", what:"Login + Register UI. Connect to backend.", tasks:["Login page UI","Register page UI","Axios POST to auth endpoints","AuthContext: user, isAuthenticated, logout"] },
+    note:"Show helpful error messages.",
+    links:[{label:"Axios Interceptors",url:"https://axios-http.com/docs/interceptors",cat:"docs"}],
+    quiz:[
+      { q:"What is the purpose of an Axios Interceptor?", opts:["To block CORS errors","To run a function automatically before a request is sent or after a response is received","To parse XML into JSON","To hash passwords"], ans:1, exp:"Interceptors are perfect for automatically attaching an Authorization token to every outgoing request." },
+      { q:"If a user submits invalid login credentials, what status code should the backend ideally return?", opts:["200 OK","401 Unauthorized","404 Not Found","500 Internal Server Error"], ans:1, exp:"401 Unauthorized specifies that the client lacks valid authentication credentials for the target resource." }
+    ]},
+  { day:35, phase:3, tag:"BUILD", diff:"medium",
+    morning:{ label:"Light DSA — 30 min", what:"1 greedy or binary search.", tasks:["1 greedy or BS medium (25 min timed)"] },
+    evening:{ label:"Project — Frontend: Core Pages", what:"Dashboard + resource list + forms.", tasks:["Dashboard page","Create resource form with validation","Edit + Delete with confirmation","Loading + error states"] },
+    note:"UI without loading states looks broken.",
+    links:[{label:"React Query",url:"https://tanstack.com/query/latest",cat:"docs"}],
+    quiz:[
+      { q:"What is a major benefit of using a library like React Query or SWR for data fetching?", opts:["It replaces your backend","It automatically caches data, handles loading/error states, and dedupes requests","It writes your CSS for you","It parses GraphQL"], ans:1, exp:"Server-state libraries drastically reduce boilerplate by handling caching, refetching, and state management out of the box." },
+      { q:"Why should destructive actions (like DELETE) always have a confirmation step?", opts:["To slow down the database","To prevent accidental data loss by the user","Because HTML requires it","To trigger a React re-render"], ans:1, exp:"Good UX prevents catastrophic user errors." }
+    ]},
+  { day:36, phase:3, tag:"BUILD", diff:"medium",
+    morning:{ label:"Light DSA — 30 min", what:"1 tree or graph medium.", tasks:["1 tree or graph medium (25 min timed)"] },
+    evening:{ label:"Project — Search + Filter + Pagination", what:"Search, filter, paginated list.", tasks:["Backend: query params → MongoDB regex","Backend: paginate with skip/limit","Frontend: debounced search input","Frontend: pagination controls"] },
+    note:"Debounce the search — don't hit the API on every keystroke.",
+    links:[{label:"MongoDB Query Operators",url:"https://www.mongodb.com/docs/manual/reference/operator/query/",cat:"docs"}],
+    quiz:[
+      { q:"What does 'debouncing' an input mean in the context of a search bar?", opts:["Delaying the API request until the user stops typing for a specified time","Sending the request instantly on every keystroke","Encrypting the search term","Caching the search results permanently"], ans:0, exp:"Debouncing prevents spamming your backend with requests for every single keystroke." },
+      { q:"To perform a case-insensitive search in MongoDB, which operator/feature is typically used?", opts:["$equal","$search","$regex with 'i' option","$find"], ans:2, exp:"{ title: { $regex: 'query', $options: 'i' } } is a common way to do case-insensitive partial text matching." }
+    ]},
+  { day:37, phase:3, tag:"BUILD", diff:"medium",
+    morning:{ label:"Light DSA — 30 min", what:"1 DP medium.", tasks:["1 DP medium (25 min timed)"] },
+    evening:{ label:"Project — Image Upload + Profile", what:"User profile picture. Multer backend.", tasks:["PUT /api/users/profile","POST /api/users/avatar (Multer)","Frontend: profile page + edit form","Frontend: show avatar everywhere"] },
+    note:"Use Cloudinary in production.",
+    links:[{label:"Multer npm",url:"https://www.npmjs.com/package/multer",cat:"docs"}],
+    quiz:[
+      { q:"When uploading files from an HTML form, what MUST the form's enctype attribute be set to?", opts:["application/json","multipart/form-data","text/plain","application/x-www-form-urlencoded"], ans:1, exp:"multipart/form-data is required for forms that upload files, allowing binary data to be sent." },
+      { q:"Why is it a bad idea to store user uploaded images directly in your MongoDB document?", opts:["MongoDB doesn't support binary data","It drastically bloats document size, slowing down queries and hitting the 16MB document limit quickly","Images cannot be retrieved","It violates REST principles"], ans:1, exp:"Images should be stored in a file system or cloud bucket (like AWS S3 or Cloudinary), while the DB only stores the URL." }
+    ]},
+  { day:38, phase:3, tag:"BUILD", diff:"medium",
+    morning:{ label:"Light DSA — 30 min", what:"1 problem from weak list.", tasks:["1 problem you've been avoiding"] },
+    evening:{ label:"Project — Responsive UI + Dark Mode", what:"Mobile-first layout. Dark mode. Animations.", tasks:["All pages responsive (375px)","Dark mode toggle","Empty state components","Hover transitions on cards/buttons"] },
+    note:"Responsive + dark mode = portfolio piece.",
+    links:[{label:"Tailwind Dark Mode",url:"https://tailwindcss.com/docs/dark-mode",cat:"docs"}],
+    quiz:[
+      { q:"In CSS Grid and Flexbox, what does 'mobile-first' styling mean?", opts:["Writing styles for desktop, then using max-width to fix mobile","Writing styles for mobile as the default, then using min-width media queries for larger screens","Only supporting mobile devices","Using inline styles on mobile"], ans:1, exp:"Mobile-first ensures the base CSS is lean and caters to mobile, adding complexity only as the screen size increases." },
+      { q:"What is the CSS pseudo-class used to detect a user's OS-level preference for a dark theme?", opts:[":root","::dark","@media (prefers-color-scheme: dark)","@media (theme: dark)"], ans:2, exp:"prefers-color-scheme allows developers to hook into the user's system preferences for light or dark mode." }
+    ]},
+  { day:39, phase:3, tag:"BUILD", diff:"medium",
+    morning:{ label:"Light DSA — 30 min", what:"1 medium of choice.", tasks:["1 medium timed"] },
+    evening:{ label:"Project — Security Hardening", what:"Error handler. Rate limiting. Helmet.", tasks:["Global Express error middleware","express-rate-limit","helmet (HTTP headers)","mongoSanitize (NoSQL injection)"] },
+    note:"4 npm installs. Production-safe.",
+    links:[{label:"Helmet.js",url:"https://helmetjs.github.io/",cat:"docs"}],
+    quiz:[
+      { q:"What type of attack does 'express-rate-limit' primarily prevent?", opts:["SQL Injection","Cross-Site Scripting (XSS)","Brute-force attacks and Denial of Service (DoS)","Man-in-the-Middle"], ans:2, exp:"Rate limiting restricts the number of requests from a single IP over a time window, stopping bots from brute-forcing logins or crashing the server." },
+      { q:"What does the 'Helmet' package do in an Express app?", opts:["It encrypts the database","It secures the app by setting various HTTP headers (like Content-Security-Policy)","It manages JWTs automatically","It sanitizes JSON payloads"], ans:1, exp:"Helmet is a middleware that sets crucial HTTP security headers to protect against common web vulnerabilities." }
+    ]},
+  { day:40, phase:3, tag:"BUILD", diff:"medium",
+    morning:{ label:"Light DSA — 30 min", what:"1 Blind 75 unsolved.", tasks:["1 Blind 75 unsolved"] },
+    evening:{ label:"Project — Deploy Backend", what:"Deploy Express + MongoDB to Render.", tasks:["Create Render Web Service","Set env vars","Test endpoints on live URL","Fix CORS for production"] },
+    note:"Render free tier spins down after 15 min idle.",
+    links:[{label:"Render Docs",url:"https://render.com/docs/deploy-node-express-app",cat:"docs"}],
+    quiz:[
+      { q:"When deploying your backend, what must you do with your environment variables (like MongoDB URI)?", opts:["Commit them to GitHub so the server can read them","Configure them directly in the hosting platform's dashboard (e.g., Render Env Vars)","Hardcode them in the entry file before deploying","Leave them blank"], ans:1, exp:"Environment variables must be manually added to your production server's secure configuration, never checked into Git." },
+      { q:"If your frontend deployed on Vercel calls your backend on Render, and gets a CORS error, what needs fixing?", opts:["Vercel needs to allow Render's IP","The Express backend needs to add the Vercel domain to its allowed CORS origins list","The frontend needs to use HTTP instead of HTTPS","MongoDB needs to open its firewall"], ans:1, exp:"The server (Render) defines which origins (Vercel) are allowed to make cross-origin requests to it." }
+    ]},
+  { day:41, phase:3, tag:"BUILD", diff:"medium",
+    morning:{ label:"Light DSA — 30 min", what:"1 medium, any pattern.", tasks:["1 medium problem"] },
+    evening:{ label:"Project — Deploy Frontend", what:"Deploy React to Vercel. E2E test.", tasks:["Create Vercel project","Set VITE_API_URL","Test full user flow","Fix production-only bugs"] },
+    note:"Always test the deployed version.",
+    links:[{label:"Vercel Docs",url:"https://vercel.com/docs",cat:"docs"}],
+    quiz:[
+      { q:"In a Vite project, how must environment variables be prefixed to be exposed to the client-side code?", opts:["REACT_APP_","PUBLIC_","VITE_","CLIENT_"], ans:2, exp:"Vite requires the VITE_ prefix (e.g., VITE_API_URL) to expose variables securely to the frontend bundle." },
+      { q:"When deploying a Single Page App (SPA) like React to Vercel/Netlify, what routing issue often occurs on refresh?", opts:["The CSS disappears","A 404 error occurs because the server tries to look for a physical file matching the URL route","The API gets disconnected","The app enters an infinite loop"], ans:1, exp:"Servers need a rewrite rule (or catch-all) to redirect all traffic to index.html, allowing React Router to handle the path." }
+    ]},
+  { day:42, phase:3, tag:"BUILD", diff:"medium",
+    morning:{ label:"Pattern Revision Sprint (1.5 hrs)", what:"15 patterns × 5 min review.", tasks:["Two pointers, Sliding window, Prefix sum","Stack, BS, Linked list","Trees, BST, Heaps","Graphs, Topo sort, Dijkstra, DSU","DP 1D/2D/Knapsack/String"] },
+    evening:{ label:"Project — README + Documentation", what:"Great README = recruiter attention.", tasks:["Description, live demo, screenshots","Tech stack, features, how to run","API endpoint docs (table format)","Push final code, tag v1.0.0"] },
+    note:"Recruiters spend 30 seconds on a repo.",
+    links:[{label:"README Best Practices",url:"https://www.makeareadme.com/",cat:"learn"}],
+    quiz:[
+      { q:"What is the absolute most important element of a portfolio project's GitHub README?", opts:["The entire source code pasted in","A live demo link placed prominently at the top","A list of every single npm package used","A 5,000 word essay on the development process"], ans:1, exp:"Recruiters and managers don't have time to clone your repo. A live link proves it works immediately." },
+      { q:"Which markup language is used to write standard README files on GitHub?", opts:["HTML","Markdown","XML","LaTeX"], ans:1, exp:"Markdown (.md) is the standard, allowing for clean text formatting, links, and embedded images." }
+    ]},
+  { day:43, phase:3, tag:"PREP", diff:"hard",
+    morning:{ label:"Full Mock Contest (2 hrs)", what:"3 problems, no hints, timed.", tasks:["Easy (15 min)","Medium (35 min)","Medium-Hard (45 min)","Review mistakes"] },
+    evening:{ label:"Interview Prep — Technical", what:"Explain architecture. System design basics.", tasks:["Project architecture walkthrough","Why MongoDB over SQL?","JWT auth end to end","System design: URL shortener"] },
+    note:"Own every line you wrote.",
+    links:[{label:"System Design Primer",url:"https://github.com/donnemartin/system-design-primer",cat:"learn"}],
+    quiz:[
+      { q:"If an interviewer asks 'Why did you choose MongoDB over PostgreSQL?', what is a strong technical reason?", opts:["Because it's what the tutorial used","Because my data model is highly unstructured and heavily read-focused, making document embedding efficient","Because it doesn't require a backend","Because SQL is dead"], ans:1, exp:"A good answer relies on data access patterns. NoSQL excels at fast reads via embedding and flexible schemas." },
+      { q:"In system design, what does 'Horizontal Scaling' mean?", opts:["Upgrading the server's CPU and RAM","Adding more servers to distribute the load","Caching data in memory","Switching from SQL to NoSQL"], ans:1, exp:"Horizontal scaling (scaling out) involves adding more machines to your pool of resources." }
+    ]},
+  { day:44, phase:3, tag:"PREP", diff:"hard",
+    morning:{ label:"Weak Areas Only (1.5 hrs)", what:"Final targeted practice.", tasks:["3 weakest patterns — 1 problem each","Review TC/SC for every pattern","Review edge cases you miss"] },
+    evening:{ label:"HR + Behavioural Prep", what:"STAR framework. Your story.", tasks:["Write 3 STAR stories","Prepare: tell me about yourself (90 sec)","Research 5 target companies","Update LinkedIn, resume, portfolio"] },
+    note:"'Tell me about yourself' is your first impression.",
+    links:[{label:"STAR Method",url:"https://www.themuse.com/advice/star-interview-method",cat:"learn"}],
+    quiz:[
+      { q:"What does the 'A' in the STAR behavioral interview framework stand for?", opts:["Attitude","Action","Algorithm","Assessment"], ans:1, exp:"STAR stands for Situation, Task, Action, and Result. 'Action' is where you describe specifically what YOU did." },
+      { q:"How long should your 'Tell me about yourself' pitch ideally be?", opts:["30 seconds","1 to 2 minutes","5 to 10 minutes","Just read your entire resume aloud"], ans:1, exp:"A crisp 1-2 minute elevator pitch highlighting your journey, key skills, and what you're looking for next is ideal." }
+    ]},
+  { day:45, phase:3, tag:"BUILD", diff:"easy",
+    morning:{ label:"Final Confidence Check (1 hr)", what:"5 problems you previously struggled with.", tasks:["5 problems from 'got wrong' list","No hints. Clean solutions.","Write TC/SC for each"] },
+    evening:{ label:"Project Polish", what:"Refine your project for your portfolio.", tasks:["Ensure responsive design","Check accessibility","Add a loading skeleton","Write a dev.to article about your project"] },
+    note:"You have completed the core DSA and MERN journey. Now for CS fundamentals.",
+    links:[{label:"Dev.to",url:"https://dev.to/",cat:"tool"}],
+    quiz:[
+      { q:"What is the primary benefit of adding a 'loading skeleton' to your UI?", opts:["It speeds up the database query","It improves perceived performance and reduces user frustration compared to a blank screen or basic spinner","It is required for SEO","It replaces the need for React State"], ans:1, exp:"Skeletons provide visual context immediately, making the app feel faster and more responsive." },
+      { q:"Which HTML attribute is used to provide alternative text for images to improve accessibility?", opts:["title","src","href","alt"], ans:3, exp:"The 'alt' attribute is read by screen readers to describe the image to visually impaired users." }
+    ]},
+  { day:46, phase:4, tag:"CS", diff:"medium",
+    morning:{ label:"DBMS — Relational Model & SQL", what:"Tables, Keys (Primary, Foreign), Basic Queries", tasks:["Understand ACID properties","Write CRUD SQL queries","Joins (Inner, Left, Right, Full)"] },
+    evening:{ label:"OOPs — Core Concepts", what:"Classes, Objects, Abstraction, Encapsulation", tasks:["Create classes in JS/Java/C++","Implement Getters and Setters","Real-world abstraction examples"] },
+    note:"SQL is asked in almost every backend interview.",
+    links:[{label:"SQL Tutorial",url:"https://www.w3schools.com/sql/",cat:"learn"}],
+    quiz:[
+      { q:"What does the 'A' in ACID properties of a database stand for?", opts:["Automatic","Asynchronous","Atomicity","Aggregation"], ans:2, exp:"Atomicity guarantees that a transaction is treated as a single, indivisible logical unit of work (all or nothing)." },
+      { q:"Which OOP principle restricts direct access to some of an object's components (using getters/setters)?", opts:["Polymorphism","Inheritance","Encapsulation","Abstraction"], ans:2, exp:"Encapsulation binds data and the methods that manipulate it, keeping both safe from outside interference and misuse." }
+    ]},
+  { day:47, phase:4, tag:"CS", diff:"medium",
+    morning:{ label:"DBMS — Normalization", what:"1NF, 2NF, 3NF, BCNF. Eliminating anomalies.", tasks:["Normalize a given denormalized table to 3NF","Understand Boyce-Codd Normal Form","Difference between 3NF and BCNF"] },
+    evening:{ label:"OOPs — Inheritance & Polymorphism", what:"Code reusability and method overriding/overloading.", tasks:["Implement single and multiple inheritance (interfaces)","Method overriding vs overloading","Virtual functions (C++) / abstract classes"] },
+    note:"Normalization reduces data redundancy.",
+    links:[{label:"Normalization Guide",url:"https://www.studytonight.com/dbms/database-normalization.php",cat:"learn"}],
+    quiz:[
+      { q:"What is the primary goal of Database Normalization?", opts:["To encrypt data","To reduce data redundancy and improve data integrity","To increase query speed for reads","To combine all tables into one"], ans:1, exp:"Normalization minimizes duplicate data and ensures that data dependencies make logical sense." },
+      { q:"Method Overriding is an example of which type of Polymorphism?", opts:["Compile-time (Static) Polymorphism","Run-time (Dynamic) Polymorphism","Interface Polymorphism","Operator Overloading"], ans:1, exp:"Overriding happens at runtime when the JVM (or equivalent) decides which child method to invoke based on the object instance." }
+    ]},
+  { day:48, phase:4, tag:"CS", diff:"hard",
+    morning:{ label:"DBMS — Indexing & Transactions", what:"B-Trees, B+ Trees, Hashing, Transaction states.", tasks:["How B+ Tree indexing works","Clustered vs Non-Clustered Indexes","Transaction isolation levels (Read uncommitted, serializable)"] },
+    evening:{ label:"OS — Processes & Threads", what:"Process lifecycle, Context Switching, Multithreading.", tasks:["Process vs Thread","Draw process state diagram","User level vs Kernel level threads"] },
+    note:"Indexing makes reads O(log n) but slows down writes.",
+    links:[{label:"OS Process Management",url:"https://www.geeksforgeeks.org/introduction-of-process-management/",cat:"learn"}],
+    quiz:[
+      { q:"Why are B+ Trees preferred over standard Binary Search Trees for Database Indexing?", opts:["They are easier to code","They use less memory overall","Their wide, shallow structure minimizes expensive disk I/O operations","They don't require balancing"], ans:2, exp:"B+ Trees store many keys per node (disk block), keeping the tree very shallow, which drastically cuts down on disk reads." },
+      { q:"What is a key difference between a Process and a Thread?", opts:["Threads do not share memory, Processes do","Threads within the same process share the same memory space (heap/code), while processes are isolated","Threads are heavier and take longer to create","Processes are managed by the user, threads by the OS"], ans:1, exp:"Threads share the process's resources (like memory and open files), making context switching between them much faster." }
+    ]},
+  { day:49, phase:4, tag:"CS", diff:"hard",
+    morning:{ label:"OS — CPU Scheduling", what:"FCFS, SJF, Round Robin, Priority Scheduling.", tasks:["Solve SJF scheduling problem (preemptive vs non)","Understand Round Robin time quantum","Calculate average waiting time"] },
+    evening:{ label:"OS — Synchronization & Deadlocks", what:"Mutex, Semaphores, Deadlock characterization.", tasks:["Producer-Consumer problem","Banker's Algorithm","Coffman conditions for deadlock"] },
+    note:"Deadlock needs 4 conditions: Mutual exclusion, Hold and wait, No preemption, Circular wait.",
+    links:[{label:"Banker's Algorithm",url:"https://www.geeksforgeeks.org/bankers-algorithm-in-operating-system-2/",cat:"learn"}],
+    quiz:[
+      { q:"Which CPU scheduling algorithm gives the lowest average waiting time for a given set of processes?", opts:["First Come First Serve (FCFS)","Round Robin (RR)","Shortest Job First (SJF)","Priority Scheduling"], ans:2, exp:"SJF is mathematically proven to provide the optimal (lowest) average waiting time, though it is hard to implement practically because CPU burst times are unpredictable." },
+      { q:"Which of the following is NOT one of the 4 necessary conditions for a Deadlock (Coffman conditions)?", opts:["Mutual Exclusion","Preemption","Hold and Wait","Circular Wait"], ans:1, exp:"NO preemption is the condition. If a system allows preemption (taking resources away forcefully), deadlock can be broken." }
+    ]},
+  { day:50, phase:4, tag:"CS", diff:"medium",
+    morning:{ label:"OS — Memory Management", what:"Paging, Segmentation, Virtual Memory.", tasks:["Paging vs Segmentation","Page replacement algorithms (LRU, FIFO)","Thrashing"] },
+    evening:{ label:"OOPs — Design Patterns I", what:"Singleton, Factory, Observer patterns.", tasks:["Implement Singleton pattern","Implement Factory pattern","When to use Observer pattern"] },
+    note:"Design patterns solve common software engineering problems.",
+    links:[{label:"Refactoring Guru - Patterns",url:"https://refactoring.guru/design-patterns",cat:"learn"}],
+    quiz:[
+      { q:"What does 'Thrashing' mean in the context of an Operating System?", opts:["The CPU is running too hot","The OS is spending more time swapping pages in/out of memory than actually executing processes","A hard drive is failing physically","A process is stuck in an infinite loop"], ans:1, exp:"Thrashing happens when physical memory is over-committed, leading to constant page faults and disk swapping, killing performance." },
+      { q:"Which Design Pattern ensures a class only has one instance, and provides a global point of access to it?", opts:["Factory Method","Observer","Decorator","Singleton"], ans:3, exp:"The Singleton pattern restricts object creation to a single instance, useful for DB connections or global configurations." }
+    ]},
+  { day:51, phase:4, tag:"CS", diff:"medium",
+    morning:{ label:"DBMS — SQL Advanced", what:"Group By, Having, Subqueries, Window Functions.", tasks:["Write queries using window functions (RANK, DENSE_RANK)","Correlated vs Uncorrelated subqueries","Aggregate functions"] },
+    evening:{ label:"Computer Networks — OSI Model", what:"7 layers of OSI, TCP/IP model.", tasks:["Functions of Transport vs Network layer","TCP vs UDP","MAC address vs IP address"] },
+    note:"Networks often pop up in backend interviews.",
+    links:[{label:"OSI Model",url:"https://www.geeksforgeeks.org/layers-of-osi-model/",cat:"learn"}],
+    quiz:[
+      { q:"In SQL, what is the difference between the WHERE and HAVING clauses?", opts:["WHERE is used for strings, HAVING for numbers","WHERE filters rows before aggregation, HAVING filters groups after aggregation (GROUP BY)","They are exactly the same","HAVING is only used with JOINS"], ans:1, exp:"WHERE operates on individual rows. HAVING operates on the grouped result sets generated by GROUP BY." },
+      { q:"At which OSI layer does an IP Address operate?", opts:["Data Link Layer (Layer 2)","Network Layer (Layer 3)","Transport Layer (Layer 4)","Application Layer (Layer 7)"], ans:1, exp:"IP addresses govern routing across networks and operate at the Network Layer (Layer 3)." }
+    ]},
+  { day:52, phase:4, tag:"CS", diff:"medium",
+    morning:{ label:"Computer Networks — App Layer & HTTP", what:"HTTP/HTTPS, DNS, WebSockets.", tasks:["How DNS resolution works","HTTP methods (GET, POST, PUT, DELETE, PATCH)","Status codes (2xx, 4xx, 5xx)"] },
+    evening:{ label:"System Design — Basics", what:"Client-Server, Scalability, Load Balancing.", tasks:["Vertical vs Horizontal Scaling","Consistent Hashing","Load balancer algorithms"] },
+    note:"System design rounds test your architectural thinking.",
+    links:[{label:"System Design Primer",url:"https://github.com/donnemartin/system-design-primer",cat:"learn"}],
+    quiz:[
+      { q:"What is the primary function of DNS (Domain Name System)?", opts:["To encrypt network traffic","To translate human-readable domain names (like google.com) into IP addresses","To balance load across servers","To assign MAC addresses"], ans:1, exp:"DNS acts as the phonebook of the internet, resolving domains to routable IP addresses." },
+      { q:"Which load balancing algorithm distributes requests by cycling through the list of servers sequentially?", opts:["Least Connections","IP Hash","Round Robin","Random"], ans:2, exp:"Round Robin simply goes down the list of servers one by one, looping back to the top when it reaches the end." }
+    ]},
+  { day:53, phase:4, tag:"CS", diff:"hard",
+    morning:{ label:"System Design — Data Storage", what:"CAP Theorem, SQL vs NoSQL, Sharding.", tasks:["Understand CAP Theorem (CP vs AP)","When to use NoSQL vs SQL","Database Sharding strategies"] },
+    evening:{ label:"System Design — Caching & CDNs", what:"Redis, Memcached, CDN distribution.", tasks:["Write-through vs Write-behind caching","Eviction policies (LRU, LFU)","How CDN speeds up delivery"] },
+    note:"Caching is the easiest way to improve read performance.",
+    links:[{label:"Redis Architecture",url:"https://redis.io/docs/about/architecture/",cat:"learn"}],
+    quiz:[
+      { q:"According to the CAP theorem, a distributed database can only provide two of which three guarantees?", opts:["Concurrency, Availability, Performance","Consistency, Availability, Partition Tolerance","Caching, Asynchronicity, Persistence","Consistency, Accuracy, Partitioning"], ans:1, exp:"CAP theorem states a distributed system can only provide two of: Consistency, Availability, and Partition Tolerance (usually sacrificing C or A during a network partition)." },
+      { q:"What does a CDN (Content Delivery Network) primarily cache to speed up website load times?", opts:["Database queries","Static assets (Images, CSS, JS, HTML) globally near the user","User passwords","API POST requests"], ans:1, exp:"CDNs store static files in edge locations around the world so users download them from a physically closer server." }
+    ]},
+  { day:54, phase:4, tag:"CS", diff:"hard",
+    morning:{ label:"System Design — Message Queues", what:"Kafka, RabbitMQ, Asynchronous processing.", tasks:["Pub/Sub model","Decoupling microservices","Message queue use cases"] },
+    evening:{ label:"System Design — Microservices", what:"Monolith vs Microservices, API Gateways.", tasks:["Pros and cons of Microservices","Service discovery","Role of an API Gateway"] },
+    note:"Microservices solve organizational scaling, not just technical scaling.",
+    links:[{label:"Microservices Guide",url:"https://martinfowler.com/articles/microservices.html",cat:"learn"}],
+    quiz:[
+      { q:"What is a major architectural benefit of using a Message Queue (like RabbitMQ) between microservices?", opts:["It makes communication synchronous and faster","It tightly couples the services together","It decouples services, allowing asynchronous processing and buffering during traffic spikes","It replaces the database"], ans:2, exp:"Queues act as buffers. If service B goes down, Service A can still push messages to the queue, and B will process them when it recovers." },
+      { q:"What is the role of an API Gateway in a microservices architecture?", opts:["It stores the main database tables","It acts as a single entry point for clients, handling routing, auth, and rate-limiting before requests hit internal services","It is only used for frontend rendering","It runs background cron jobs"], ans:1, exp:"The Gateway abstracts the complex internal microservice network away from the client." }
+    ]},
+  { day:55, phase:4, tag:"TEST", diff:"hard",
+    morning:{ label:"CS Core Mock Interview", what:"DBMS, OS, OOPs oral questions.", tasks:["Explain ACID properties verbally","Explain Virtual Memory","Explain Polymorphism with examples"] },
+    evening:{ label:"System Design Mock", what:"Design a URL Shortener (Bitly).", tasks:["Estimate capacity","Design DB schema","Handle high read volume with cache"] },
+    note:"Practice speaking your thoughts aloud.",
+    links:[{label:"Grokking System Design",url:"https://www.designgurus.io/",cat:"practice"}],
+    quiz:[
+      { q:"In a URL Shortener system design, why is base62 encoding commonly used for generating the short URL?", opts:["It is highly encrypted","It uses A-Z, a-z, and 0-9 to create short, URL-safe alphanumeric strings","It automatically handles caching","It prevents hash collisions entirely"], ans:1, exp:"Base62 provides 62 characters. Just 7 characters of base62 can represent 62^7 (over 3.5 trillion) unique URLs." },
+      { q:"Which of the following is an example of an 'Availability' focused strategy in a distributed system?", opts:["Locking rows in a database until a transaction completes","Returning cached (potentially stale) data during a database outage","Failing a request if all nodes cannot agree on the data state","Using two-phase commits"], ans:1, exp:"Returning stale data prioritizes the system being 'Available' to the user, sacrificing strict 'Consistency' (the 'A' over 'C' in CAP)." }
+    ]},
+  { day:56, phase:4, tag:"PREP", diff:"medium",
+    morning:{ label:"Resume & Portfolio Polish", what:"Highlight metrics and impact.", tasks:["Use XYZ formula (Accomplished X as measured by Y, by doing Z)","Ensure GitHub READMEs are perfect","Deploy all side projects"] },
+    evening:{ label:"Behavioral — STAR Method", what:"Situation, Task, Action, Result.", tasks:["Draft answer for 'Biggest challenge'","Draft answer for 'Conflict with teammate'","Draft answer for 'Proudest project'"] },
+    note:"Behavioral rounds are often the deciding factor.",
+    links:[{label:"STAR Method",url:"https://www.themuse.com/advice/star-interview-method",cat:"learn"}],
+    quiz:[
+      { q:"Which resume bullet point format is highly recommended by tech recruiters (often called the Google formula)?", opts:["Wrote code for the X feature using Y language","Accomplished [X] as measured by [Y], by doing [Z]","Tasked with [X] and completed it by [Y]","Successfully deployed [X] with a team of [Y]"], ans:1, exp:"This formula emphasizes IMPACT and metrics, not just duties." },
+      { q:"When answering a behavioral question about a 'failure', what is the most important part of your answer?", opts:["Blaming external factors out of your control","Focusing entirely on the negative outcome","Explaining the lesson learned and how you changed your process to prevent it in the future","Pretending you've never failed"], ans:2, exp:"Interviewers want to see accountability, growth mindset, and process improvement." }
+    ]},
+  { day:57, phase:4, tag:"PREP", diff:"hard",
+    morning:{ label:"DSA Final Revision — Arrays/Strings", what:"Top 5 most frequent questions.", tasks:["2Sum, 3Sum","Longest Substring Without Repeating","Merge Intervals"] },
+    evening:{ label:"DSA Final Revision — Trees/Graphs", what:"Top 5 most frequent questions.", tasks:["LCA in Binary Tree","Number of Islands","Course Schedule"] },
+    note:"Focus on pattern recognition.",
+    links:[{label:"Neetcode 150",url:"https://neetcode.io/practice",cat:"practice"}],
+    quiz:[
+      { q:"If you are asked to solve '3Sum', what is generally the most optimal time complexity you can achieve?", opts:["O(n)","O(n log n)","O(n^2)","O(n^3)"], ans:2, exp:"By sorting the array first (O(n log n)) and then using a loop with two-pointers inside (O(n^2)), the overall complexity is O(n^2)." },
+      { q:"For 'Number of Islands' on a 2D grid, which two algorithms are standard choices?", opts:["Binary Search and Two Pointers","Dijkstra and Bellman-Ford","BFS and DFS","Dynamic Programming and Memoization"], ans:2, exp:"Both Breadth-First Search and Depth-First Search are perfect for traversing connected components (islands) in a matrix." }
+    ]},
+  { day:58, phase:4, tag:"PREP", diff:"hard",
+    morning:{ label:"DSA Final Revision — DP", what:"Top 5 most frequent questions.", tasks:["Climbing Stairs","Coin Change","Longest Increasing Subsequence"] },
+    evening:{ label:"Company Specific Prep", what:"Research target companies.", tasks:["Look up interview experiences on LeetCode Discuss","Understand company values/leadership principles","Prepare 3 questions to ask the interviewer"] },
+    note:"Always have questions prepared for the end of the interview.",
+    links:[{label:"LeetCode Discuss",url:"https://leetcode.com/discuss/interview-experience",cat:"practice"}],
+    quiz:[
+      { q:"In 'Coin Change', if we need the FEWEST number of coins to make an amount, what should our DP array be initialized with?", opts:["0","-1","Infinity (or amount + 1)","The amount itself"], ans:2, exp:"We initialize with a value representing infinity. When we take a minimum, any valid coin combination will overwrite the infinity." },
+      { q:"Why is it crucial to ask the interviewer questions at the end of the interview?", opts:["It is just a formality","It shows your genuine interest in the role and company culture, and helps you evaluate if you want to work there","It proves you are smarter than them","It gives you more time to solve the coding problem"], ans:1, exp:"Interviewing is a two-way street. Good questions demonstrate preparation and cultural fit." }
+    ]},
+  { day:59, phase:4, tag:"PREP", diff:"easy",
+    morning:{ label:"Mock Interview — Full Loop", what:"Simulate a 45-min coding round.", tasks:["Use Pramp or a friend","Talk through your code","Analyze Time/Space complexity"] },
+    evening:{ label:"Rest & Mental Prep", what:"Relaxation before the real thing.", tasks:["No coding tonight","Review high-level notes","Sleep 8 hours"] },
+    note:"Don't burn out right before the finish line.",
+    links:[{label:"Pramp Mock Interviews",url:"https://www.pramp.com/",cat:"practice"}],
+    quiz:[
+      { q:"During a coding interview, what should you do BEFORE writing any code?", opts:["Start typing a for-loop immediately","Explain the Brute Force approach, discuss its complexity, and propose an optimized approach for approval","Ask for the solution","Write the test cases first"], ans:1, exp:"Ensure you and the interviewer are aligned on the approach and complexities before you invest time writing the actual code." },
+      { q:"If you realize halfway through writing code that your approach has a flaw, what should you do?", opts:["Hide it and hope they don't notice","Delete everything and start over in silence","Communicate the flaw immediately to the interviewer and pivot together","Panic"], ans:2, exp:"Interviewers appreciate developers who can catch their own mistakes and course-correct collaboratively." }
+    ]},
+  { day:60, phase:4, tag:"PREP", diff:"easy",
+    morning:{ label:"The Big Day / Applying Phase", what:"Start the application engine.", tasks:["Apply to 10 high-priority companies","Send 5 cold emails/LinkedIn DMs","Track applications in a spreadsheet"] },
+    evening:{ label:"Celebrate Your 60-Day Journey 🎉", what:"You completed the ultimate prep guide.", tasks:["Reflect on Day 1 vs Day 60","Share your journey on LinkedIn/Twitter","Take a well-deserved break"] },
+    note:"Consistency is your superpower. Go get that offer!",
+    links:[{label:"LinkedIn",url:"https://www.linkedin.com/",cat:"tool"}],
+    quiz:[
+      { q:"What is often more effective than blindly submitting a resume through a company portal?", opts:["Submitting it 10 times","Sending a cold email or LinkedIn message to a recruiter or engineering manager at the company","Mailing a physical copy","Applying for a completely different role"], ans:1, exp:"Networking and reaching out directly often bypasses the automated resume filters and gets human eyes on your profile." },
+      { q:"You've finished the 60-day plan. What is the most important trait to maintain moving forward?", opts:["Memorizing every single LeetCode solution","Consistency—keep applying, keep coding, and don't let rejections stop you","Only applying to FAANG companies","Rewriting your resume every day"], ans:1, exp:"Job hunting is a numbers game and a test of endurance. Consistency wins." }
+    ]},
+];
