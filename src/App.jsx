@@ -799,7 +799,7 @@ export default function AppWrapper() {
           return (
             <div style={{ display:"flex", flexDirection:"column", alignItems:"center", padding:"40px 20px" }}>
               <div style={{ width:"100%", maxWidth:900 }}>
-                <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:30, padding:"30px", background:"linear-gradient(135deg,rgba(45,212,191,0.1),rgba(129,140,248,0.1))", border:"1px solid var(--border)", borderRadius:20 }}>
+                <div style={{ display:"flex", flexWrap:"wrap", gap:20, justifyContent:"space-between", alignItems:"center", marginBottom:30, padding:"30px", background:"linear-gradient(135deg,rgba(45,212,191,0.1),rgba(129,140,248,0.1))", border:"1px solid var(--border)", borderRadius:20 }}>
                   <div>
                     <h2 style={{ fontSize:28, fontWeight:900, color:"var(--text)" }}>Study Squad: Alpha Team</h2>
                     <p style={{ color:"var(--text-secondary)", marginTop:8 }}>Compete with your friends and climb the leaderboard! (Mock Offline Mode)</p>
@@ -833,7 +833,7 @@ export default function AppWrapper() {
           return (
             <div style={{ display:"flex", flexDirection:"column", alignItems:"center", padding:"40px 20px" }}>
               <div style={{ width:"100%", maxWidth:900 }}>
-                <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:20 }}>
+                <div style={{ display:"flex", flexWrap:"wrap", gap:10, justifyContent:"space-between", alignItems:"center", marginBottom:20 }}>
                   <h2 style={{ fontSize:28, fontWeight:900, color:"var(--text)" }}>Custom Roadmap Builder</h2>
                   <div style={{display:"flex", gap:10}}>
                     <button className="btn" onClick={() => setBuilderCode(JSON.stringify(customPlan, null, 2))} style={{ padding:"10px 20px", borderRadius:8, background:"var(--dim)", color:"var(--text-muted)", fontWeight:800 }}>Reset to Current</button>
@@ -889,7 +889,7 @@ export default function AppWrapper() {
                     <button onClick={()=>setModal(null)} className="btn" style={{ background:"var(--dim)",color:"var(--text-muted)",padding:8,borderRadius:8,border:"1px solid var(--border)" }}><I.Close s={16}/></button>
                   </div>
                 </div>
-                <div style={{ display:"flex", gap:0, borderBottom:"1px solid var(--border)" }}>
+                <div className="modal-tabs-scroll" style={{ display:"flex", gap:0, borderBottom:"1px solid var(--border)", overflowX:"auto" }}>
                   {[["tasks","☀️🌙 Tasks"],["quiz","🎯 Quiz"],["notes","📝 Notes"],["timer","⏱️ Timer"],["code","💻 Code"]].map(([t,label])=>(
                     <button key={t} className="btn" onClick={()=>setModalTab(t)} style={{
                       padding:"12px 20px",fontSize:13,fontWeight:700,borderRadius:0,

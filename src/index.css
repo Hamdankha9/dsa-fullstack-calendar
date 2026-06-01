@@ -113,6 +113,9 @@ body {
 ::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 10px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--gold); }
 
+.modal-tabs-scroll::-webkit-scrollbar { display: none; }
+.modal-tabs-scroll { -ms-overflow-style: none; scrollbar-width: none; whiteSpace: nowrap; }
+
 /* ═══════════════════════════════════════════
    ANIMATIONS
    ═══════════════════════════════════════════ */
