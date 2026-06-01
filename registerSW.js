@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/dsa-fullstack-calendar/sw.js', { scope: '/dsa-fullstack-calendar/' })})}
