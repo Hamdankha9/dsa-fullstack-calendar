@@ -32,7 +32,9 @@ import "prismjs/themes/prism-tomorrow.css";
 /* ═══════════════════════════════════════════════════════════════
    LEETCODE PROBLEM LINKS — every DSA problem mapped to its URL
    ═══════════════════════════════════════════════════════════════ */
-import { LC, PHASES, PLAN as DEFAULT_PLAN, TAG_META, DIFF_META, CAT_COLORS } from "./data.js";
+import { PLAN as DEFAULT_PLAN, LC, PHASES, TAG_META, DIFF_META, CAT_COLORS } from "./data.js";
+import { getPatternData } from "./patterns.js";
+import PatternVisualizer from "./PatternVisualizer.jsx";
 
 
 /* ═══════════════════════════════════════════════════════════════
@@ -137,8 +139,131 @@ export default function AppWrapper() {
     <ErrorBoundary>
       <App />
     </ErrorBoundary>
+  );}
+
+// ═════════════════════════════════════════════════════════
+// LOGIN SCREEN COMPONENT
+// ═════════════════════════════════════════════════════════
+function LoginScreen({ onLogin }) {
+  const [isRegister, setIsRegister] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!email || !password || (isRegister && !name)) {
+      setError("Please fill out all fields.");
+      return;
+    }
+    
+    // Mock Authentication Logic
+    const users = JSON.parse(localStorage.getItem("mock_users") || "{}");
+    
+    if (isRegister) {
+      if (users[email]) {
+        setError("Account already exists with this email.");
+        return;
+      }
+      users[email] = { name, password };
+      localStorage.setItem("mock_users", JSON.stringify(users));
+      onLogin({ email, name });
+    } else {
+      if (!users[email] || users[email].password !== password) {
+        setError("Invalid email or password.");
+        return;
+      }
+      onLogin({ email, name: users[email].name });
+    }
+  };
+
+  return (
+    <div style={{ minHeight:"100vh", display:"flex", alignItems:"center", justifyContent:"center", padding:20, background:"radial-gradient(circle at center, var(--surface) 0%, var(--bg) 100%)" }}>
+      <div className="fade-in-up" style={{ width:"100%", maxWidth:400, background:"var(--card)", border:"1px solid var(--border)", borderRadius:24, padding:40, boxShadow:"var(--shadow-lg)", position:"relative", overflow:"hidden" }}>
+        
+        {/* Decorative elements */}
+        <div style={{ position:"absolute", top:-50, right:-50, width:150, height:150, background:"var(--gold-glow)", borderRadius:"50%", filter:"blur(40px)" }}/>
+        <div style={{ position:"absolute", bottom:-50, left:-50, width:150, height:150, background:"var(--teal-glow)", borderRadius:"50%", filter:"blur(40px)" }}/>
+
+        <div style={{ textAlign:"center", marginBottom:30, position:"relative" }}>
+          <div style={{ display:"inline-flex", alignItems:"center", justifyContent:"center", width:60, height:60, borderRadius:16, background:"var(--dim)", color:"var(--gold)", marginBottom:16, border:"1px solid var(--border)" }}>
+            <I.Zap s={30} />
+          </div>
+          <h1 style={{ fontSize:24, fontWeight:900 }}>{isRegister ? "Create Account" : "Welcome Back"}</h1>
+          <p style={{ color:"var(--text-secondary)", fontSize:14, marginTop:8 }}>
+            {isRegister ? "Join the 60 Days Mastery Challenge." : "Log in to continue your progress."}
+          </p>
+        </div>
+
+        {error && (
+          <div className="fade-in" style={{ padding:"12px 16px", background:"rgba(248,113,113,0.1)", border:"1px solid rgba(248,113,113,0.2)", borderRadius:12, color:"var(--red)", fontSize:13, fontWeight:600, marginBottom:20, textAlign:"center" }}>
+            {error}
+          </div>
+        )}
+
+        <form onSubmit={handleSubmit} style={{ display:"flex", flexDirection:"column", gap:16, position:"relative" }}>
+          {isRegister && (
+            <div>
+              <label style={{ display:"block", fontSize:12, fontWeight:700, color:"var(--text-secondary)", marginBottom:6, letterSpacing:"0.05em" }}>NAME</label>
+              <input type="text" value={name} onChange={e=>setName(e.target.value)} placeholder="John Doe" style={{ width:"100%", padding:"12px 16px", borderRadius:12, background:"var(--input-bg)", border:"1px solid var(--border)", color:"var(--text)", outline:"none" }} />
+            </div>
+          )}
+          <div>
+            <label style={{ display:"block", fontSize:12, fontWeight:700, color:"var(--text-secondary)", marginBottom:6, letterSpacing:"0.05em" }}>EMAIL</label>
+            <input type="email" value={email} onChange={e=>setEmail(e.target.value)} placeholder="hello@example.com" style={{ width:"100%", padding:"12px 16px", borderRadius:12, background:"var(--input-bg)", border:"1px solid var(--border)", color:"var(--text)", outline:"none" }} />
+          </div>
+          <div>
+            <label style={{ display:"block", fontSize:12, fontWeight:700, color:"var(--text-secondary)", marginBottom:6, letterSpacing:"0.05em" }}>PASSWORD</label>
+            <input type="password" value={password} onChange={e=>setPassword(e.target.value)} placeholder="••••••••" style={{ width:"100%", padding:"12px 16px", borderRadius:12, background:"var(--input-bg)", border:"1px solid var(--border)", color:"var(--text)", outline:"none" }} />
+          </div>
+          
+          <button type="submit" className="btn" style={{ width:"100%", padding:14, borderRadius:12, background:"var(--text)", color:"var(--bg)", fontSize:15, fontWeight:800, marginTop:10 }}>
+            {isRegister ? "Sign Up" : "Sign In"}
+          </button>
+        </form>
+
+        <div style={{ display:"flex", alignItems:"center", gap:16, margin:"24px 0" }}>
+          <div style={{ flex:1, height:1, background:"var(--border)" }}/>
+          <div style={{ fontSize:12, fontWeight:700, color:"var(--text-muted)", letterSpacing:"0.05em" }}>OR</div>
+          <div style={{ flex:1, height:1, background:"var(--border)" }}/>
+        </div>
+
+        <button className="btn" onClick={() => {
+          // Mock Google Auth
+          const users = JSON.parse(localStorage.getItem("mock_users") || "{}");
+          users["google@demo.com"] = { name: "Google User", password: "oauth-bypass" };
+          localStorage.setItem("mock_users", JSON.stringify(users));
+          onLogin({ email: "google@demo.com", name: "Google User" });
+        }} style={{ width:"100%", padding:14, borderRadius:12, background:"var(--surface)", border:"1px solid var(--border)", color:"var(--text)", fontSize:15, fontWeight:800, display:"flex", justifyContent:"center", gap:12 }}>
+          <svg width="20" height="20" viewBox="0 0 48 48" fill="none">
+            <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.7 17.74 9.5 24 9.5z"/>
+            <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+            <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+            <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+          </svg>
+          Continue with Google
+        </button>
+
+        <div style={{ textAlign:"center", marginTop:24, position:"relative" }}>
+          <span style={{ fontSize:14, color:"var(--text-muted)" }}>
+            {isRegister ? "Already have an account?" : "Don't have an account?"}
+          </span>
+          <button onClick={() => { setIsRegister(!isRegister); setError(""); }} style={{ background:"none", border:"none", color:"var(--gold)", fontSize:14, fontWeight:700, cursor:"pointer", marginLeft:8, padding:0 }}>
+            {isRegister ? "Sign In" : "Sign Up"}
+          </button>
+        </div>
+      </div>
+    </div>
   );
-}function App() {
+}
+
+function App() {
+  const [user, setUser] = useState(() => {
+    const saved = localStorage.getItem("auth_user");
+    return saved ? JSON.parse(saved) : null;
+  });
+
   const [view, setView] = useState("grid");
   const [activePhase, setActivePhase] = useState(0);
   const [customPlan, setCustomPlan] = useLocalStorage("dsa_plan", DEFAULT_PLAN);
@@ -297,6 +422,13 @@ export default function AppWrapper() {
   };
   const resetAll = () => { if(confirm("Reset all progress? This cannot be undone.")){setCompleted({});setNotes({});setTaskChecks({});} };
 
+  if (!user) {
+    return <LoginScreen onLogin={(u) => {
+      localStorage.setItem("auth_user", JSON.stringify(u));
+      setUser(u);
+    }} />
+  }
+
   return (
     <div style={{ minHeight:"100vh", background:"var(--bg)" }}>
 
@@ -325,7 +457,22 @@ export default function AppWrapper() {
           </div>
 
           {/* right section */}
-          <div style={{ display:"flex", alignItems:"center", gap:14 }}>
+          <div style={{ display:"flex", alignItems:"center", gap:14, flexWrap:"wrap", justifyContent:"flex-end" }}>
+            
+            <div className="hide-mobile" style={{ display:"flex", alignItems:"center", gap:10, padding:"6px 14px", background:"var(--surface)", border:"1px solid var(--border)", borderRadius:12 }}>
+              <div style={{ width:24, height:24, borderRadius:"50%", background:"linear-gradient(135deg, var(--gold), var(--orange))", display:"flex", alignItems:"center", justifyContent:"center", fontSize:12, fontWeight:900, color:"#000" }}>
+                {user?.name?.charAt(0).toUpperCase()}
+              </div>
+              <span style={{ fontSize:13, fontWeight:700, color:"var(--text)" }}>{user?.name}</span>
+            </div>
+
+            <button className="btn hide-mobile" onClick={() => {
+              localStorage.removeItem("auth_user");
+              setUser(null);
+            }} style={{ background:"transparent", color:"var(--text-muted)", fontSize:12, padding:"6px 10px", border:"1px solid var(--border)", borderRadius:8 }}>
+              Sign Out
+            </button>
+
             {/* search */}
             <button className="btn" onClick={()=>setShowSearch(s=>!s)} style={{ background:showSearch?"var(--gold-glow)":"transparent",color:showSearch?"var(--gold)":"var(--text-muted)",padding:8,borderRadius:8,border:`1px solid ${showSearch?"var(--gold)":"var(--border)"}` }}>
               <I.Search s={16}/>
@@ -890,7 +1037,7 @@ export default function AppWrapper() {
                   </div>
                 </div>
                 <div className="modal-tabs-scroll" style={{ display:"flex", gap:0, borderBottom:"1px solid var(--border)", overflowX:"auto" }}>
-                  {[["tasks","☀️🌙 Tasks"],["quiz","🎯 Quiz"],["notes","📝 Notes"],["timer","⏱️ Timer"],["code","💻 Code"]].map(([t,label])=>(
+                  {[["pattern", "🧠 Pattern"], ["tasks","☀️🌙 Tasks"],["quiz","🎯 Quiz"],["notes","📝 Notes"],["timer","⏱️ Timer"],["code","💻 Code"]].map(([t,label])=>(
                     <button key={t} className="btn" onClick={()=>setModalTab(t)} style={{
                       padding:"12px 20px",fontSize:13,fontWeight:700,borderRadius:0,
                       background:"none",color:modalTab===t?"var(--gold)":"var(--text-muted)",
@@ -1040,6 +1187,38 @@ export default function AppWrapper() {
                     )}
                   </div>
                 )}
+
+                {/* PATTERN TAB */}
+                {modalTab === "pattern" && (() => {
+                  const pattern = getPatternData(modal.morning.label);
+                  if (!pattern) return <div style={{padding:24, color:"var(--text-muted)", textAlign:"center"}}>No pattern data available for this topic.</div>;
+                  return (
+                    <div className="fade-in" style={{ padding:24, flex:1, overflowY:"auto" }}>
+                      <div style={{ background:"var(--surface)", border:"1px solid var(--border)", borderRadius:16, padding:24 }}>
+                        <h2 style={{ fontSize:22, fontWeight:900, color:"var(--gold)", marginBottom:10 }}>{pattern.title}</h2>
+                        <p style={{ color:"var(--text)", fontSize:15, lineHeight:1.6, marginBottom:20 }}>{pattern.description}</p>
+                        
+                        <h3 style={{ fontSize:15, fontWeight:800, color:"var(--text)", marginBottom:10 }}>How it works:</h3>
+                        <ul style={{ paddingLeft:20, color:"var(--text-secondary)", fontSize:14, lineHeight:1.6, marginBottom:24 }}>
+                          {pattern.howItWorks.map((step, idx) => <li key={idx} style={{ marginBottom:6 }}>{step}</li>)}
+                        </ul>
+
+                        <h3 style={{ fontSize:15, fontWeight:800, color:"var(--text)", marginBottom:10 }}>Example Code:</h3>
+                        <div style={{ background:"#1e1e1e", padding:16, borderRadius:12, overflowX:"auto" }}>
+                          <pre style={{ margin:0, color:"#d4d4d4", fontSize:13, fontFamily:"monospace" }}>{pattern.codeSnippet}</pre>
+                        </div>
+                        
+                        {/* The new Interactive Visualizer Engine */}
+                        {pattern.visType && (
+                          <div style={{ marginTop: 30 }}>
+                            <h3 style={{ fontSize:15, fontWeight:800, color:"var(--text)", marginBottom:10 }}>Interactive Visualizer:</h3>
+                            <PatternVisualizer type={pattern.visType} />
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })()}
 
                 {/* CODE SANDBOX TAB */}
                 {modalTab==="code" && (

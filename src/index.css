@@ -158,6 +158,190 @@ body {
 .check-pop { animation: checkPop 0.3s var(--ease) both; }
 
 /* ═══════════════════════════════════════════
+   PATTERN VISUALIZER — DSA ANIMATOR INSPIRED
+   ═══════════════════════════════════════════ */
+@keyframes cellPop { 0%{transform:scale(1.35);} 100%{transform:scale(1);} }
+@keyframes cellGlow { 0%{box-shadow:0 0 0 transparent;} 100%{box-shadow:0 0 16px var(--teal-glow), 0 0 30px rgba(45,212,191,0.08);} }
+@keyframes cellShake { 0%,100%{transform:translateX(0);} 25%{transform:translateX(-4px);} 75%{transform:translateX(4px);} }
+@keyframes nodeAct { 0%{transform:scale(1.4);} 100%{transform:scale(1);} }
+@keyframes progressPulse { 0%,100%{opacity:1;} 50%{opacity:0.7;} }
+@keyframes borderGlow { 0%,100%{border-color:var(--teal);box-shadow:0 0 8px var(--teal-glow);} 50%{border-color:var(--gold);box-shadow:0 0 12px var(--gold-glow);} }
+
+.vis-arena {
+  background: #0d1117;
+  border: 1px solid #1e2940;
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.vis-arena::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--teal), var(--gold), var(--purple));
+  opacity: 0.5;
+}
+.vis-arena-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 18px; padding-bottom: 12px; border-bottom: 1px solid #1e2940;
+}
+.vis-arena-title {
+  font-size: 14px; font-weight: 800; color: var(--gold);
+  display: flex; align-items: center; gap: 8px;
+  letter-spacing: -0.02em;
+}
+.vis-arena-title::before { content: '▶'; font-size: 10px; color: var(--teal); }
+.vis-step-badge {
+  font-size: 11px; font-weight: 700; color: #8892b0;
+  font-family: 'JetBrains Mono', monospace;
+  background: #151b2b; padding: 4px 10px; border-radius: 6px;
+  border: 1px solid #1e2940;
+}
+
+/* Cells */
+.vis-cell {
+  width: 44px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
+  border: 2px solid #2e3348; border-radius: 8px;
+  background: #151b2b; color: #e2e8f0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px; font-weight: 700;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+}
+.vis-cell.active {
+  background: rgba(249,115,22,0.15); border-color: #f97316; color: #f97316;
+  animation: cellPop 0.35s ease;
+  box-shadow: 0 0 12px rgba(249,115,22,0.25);
+}
+.vis-cell.highlight {
+  background: rgba(45,212,191,0.15); border-color: var(--teal); color: var(--teal);
+  animation: cellGlow 0.3s ease forwards;
+}
+.vis-cell.success {
+  background: rgba(74,222,128,0.15); border-color: #4ade80; color: #4ade80;
+  animation: cellPop 0.35s ease;
+  box-shadow: 0 0 14px rgba(74,222,128,0.2);
+}
+.vis-cell.fade {
+  opacity: 0.25; border-color: #1a1f30;
+}
+.vis-cell.removed {
+  background: rgba(248,113,113,0.12); border-color: #f87171; color: #f87171;
+  animation: cellShake 0.3s ease;
+}
+
+/* Index labels under cells */
+.vis-idx {
+  width: 44px; text-align: center;
+  font-size: 10px; color: #4a5070; font-family: 'JetBrains Mono', monospace;
+  font-weight: 600; margin-top: 2px;
+}
+
+/* Pointer arrows */
+.vis-pointer {
+  display: flex; flex-direction: column; align-items: center;
+  position: absolute; transition: left 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.vis-pointer-arrow {
+  width: 0; height: 0;
+  border-left: 6px solid transparent; border-right: 6px solid transparent;
+  margin-bottom: 3px;
+}
+.vis-pointer-label {
+  font-size: 10px; font-weight: 800; font-family: 'JetBrains Mono', monospace;
+  padding: 2px 8px; border-radius: 4px;
+  letter-spacing: 0.05em;
+}
+
+/* State badges */
+.vis-badges {
+  display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px;
+}
+.vis-badge {
+  padding: 5px 12px; border-radius: 6px;
+  background: #151b2b; border: 1px solid #1e2940;
+  font-size: 12px; font-family: 'JetBrains Mono', monospace;
+  color: #8892b0; font-weight: 500;
+}
+.vis-badge .vis-badge-val {
+  color: var(--teal); font-weight: 700;
+}
+
+/* Message box */
+.vis-msg {
+  background: #151b2b; padding: 12px 16px; border-radius: 8px;
+  border: 1px solid #1e2940; font-weight: 600; font-size: 13px;
+  min-height: 48px; display: flex; align-items: center;
+  margin-top: 14px; line-height: 1.5;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+.vis-msg.done {
+  color: var(--teal); border-color: rgba(45,212,191,0.3);
+  border-left: 3px solid var(--teal);
+}
+
+/* Code step highlight */
+.vis-code {
+  font-size: 12px; font-family: 'JetBrains Mono', monospace;
+  color: var(--teal); background: rgba(45,212,191,0.06);
+  padding: 8px 12px; border-radius: 6px;
+  margin-top: 10px; border-left: 3px solid var(--teal);
+  line-height: 1.5;
+}
+
+/* Progress bar */
+.vis-progress-wrap {
+  display: flex; align-items: center; gap: 10px; margin-top: 14px;
+}
+.vis-progress-bar {
+  flex: 1; height: 4px; background: #1a1f30; border-radius: 4px; overflow: hidden;
+}
+.vis-progress-fill {
+  height: 100%; border-radius: 4px;
+  background: linear-gradient(90deg, var(--teal), var(--gold));
+  transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Controls */
+.vis-controls {
+  display: flex; align-items: center; gap: 6px; margin-top: 14px; flex-wrap: wrap;
+}
+.vis-btn {
+  padding: 7px 14px; border-radius: 6px;
+  border: 1px solid #2e3348; background: #151b2b;
+  color: #8892b0; font-size: 12px; font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer; transition: all 0.2s ease;
+  display: flex; align-items: center; gap: 5px;
+}
+.vis-btn:hover:not(:disabled) { border-color: var(--teal); color: var(--teal); background: rgba(45,212,191,0.06); }
+.vis-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.vis-btn.primary {
+  background: var(--teal); border-color: var(--teal); color: #0d1117;
+  font-weight: 700;
+}
+.vis-btn.primary:hover:not(:disabled) { filter: brightness(1.15); background: var(--teal); color: #0d1117; }
+.vis-btn.playing {
+  background: rgba(249,115,22,0.15); border-color: #f97316; color: #f97316;
+  animation: progressPulse 1.5s ease-in-out infinite;
+}
+.vis-speed {
+  font-size: 11px; background: #151b2b; border: 1px solid #2e3348;
+  border-radius: 5px; color: #e2e8f0; padding: 5px 8px; cursor: pointer;
+  font-family: 'JetBrains Mono', monospace; font-weight: 600;
+  outline: none;
+}
+.vis-speed option { background: #0d1117; }
+
+/* Section label */
+.vis-section-label {
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.5px; color: #4a5070; margin-bottom: 8px;
+}
+
+/* ═══════════════════════════════════════════
    BUTTONS
    ═══════════════════════════════════════════ */
 .btn {
